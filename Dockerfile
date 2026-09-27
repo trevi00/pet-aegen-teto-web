@@ -1,7 +1,7 @@
 # ========================================
 # Stage 1: Build React App
 # ========================================
-FROM node:22-alpine AS builder
+FROM node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402 AS builder
 
 WORKDIR /app
 
@@ -21,9 +21,12 @@ RUN npm run build
 # ========================================
 # Stage 2: Serve with Nginx
 # ========================================
-FROM nginxinc/nginx-unprivileged:alpine
+FROM nginxinc/nginx-unprivileged:alpine@sha256:6a23acdfca2b9cfbcec61419e3f1426bcbedb91362f2f19306a8567423bb4612
 
 # Nginx 설정 복사
+USER root
+RUN apk upgrade --no-cache
+USER 101
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # 빌드된 파일 복사
