@@ -10,7 +10,7 @@ const { summary: SUMMARY, breeds: BREEDS } = JSON.parse(readFileSync('src/conten
 const SP = (s) => (s === 'cat' ? '고양이' : '강아지');
 const PCT = (a, b) => `${((100 * a) / b).toFixed(0)}%`;
 
-const SITE = 'https://agtt.cloud';
+const SITE = 'https://agttpet.com';
 const NAME = '반려동물 에겐테토 테스트';
 const DIST = 'dist';
 

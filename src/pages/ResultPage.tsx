@@ -64,7 +64,7 @@ const ResultPage: React.FC = () => {
       ctx.fillStyle = '#888888';
       ctx.font = 'bold 44px sans-serif';
       ctx.textAlign = 'center';
-      ctx.fillText('우리 아이도 테스트해 보기 🐾 agtt.cloud', 540, 1920 - 170);
+      ctx.fillText('우리 아이도 테스트해 보기 🐾 agttpet.com', 540, 1920 - 170);
 
       const blob: Blob | null = await new Promise((resolve) => story.toBlob(resolve, 'image/png'));
       if (!blob) return;
