@@ -4,11 +4,13 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
+const GUIDES = JSON.parse(readFileSync('src/content/guides.json', 'utf8'));
+
 const SITE = 'https://agtt.cloud';
 const NAME = '반려동물 에겐테토 테스트';
 const DIST = 'dist';
 
-const NAV = `<nav><a href="/">테스트 하기</a> · <a href="/about">서비스 소개</a> · <a href="/how-to-use">사용 방법</a> · <a href="/faq">자주 묻는 질문</a> · <a href="/privacy">개인정보처리방침</a> · <a href="/terms">이용약관</a></nav>`;
+const NAV = `<nav><a href="/">테스트 하기</a> · <a href="/about">서비스 소개</a> · <a href="/how-to-use">사용 방법</a> · <a href="/faq">자주 묻는 질문</a> · <a href="/guide">가이드</a> · <a href="/privacy">개인정보처리방침</a> · <a href="/terms">이용약관</a></nav>`;
 
 const ROUTES = [
   {
@@ -55,6 +57,22 @@ const ROUTES = [
     description: '에겐테토 테스트 서비스 이용약관이에요.',
     body: `<h1>이용약관</h1><p>에겐테토 테스트 서비스 이용에 관한 약관이에요.</p>`,
   },
+  {
+    path: '/guide',
+    title: `에겐테토 가이드 | ${NAME}`,
+    description: '에겐과 테토의 기준, AI가 학습한 방식과 정확도, 반려동물 사진 찍는 법, 품종별 에너지 이야기를 모았어요.',
+    body: `<h1>에겐테토 가이드</h1><ul>${GUIDES.map((g) => `<li><a href="/guide/${g.slug}">${g.title}</a> — ${g.description}</li>`).join('')}</ul>`,
+  },
+  ...GUIDES.map((g) => ({
+    path: `/guide/${g.slug}`,
+    title: `${g.title} | ${NAME}`,
+    description: g.description,
+    lastmod: g.date,
+    body: `<article><h1>${g.title}</h1>${g.sections.map((s) =>
+      (s.heading ? `<h2>${s.heading}</h2>` : '') +
+      (s.paragraphs ?? []).map((p) => `<p>${p}</p>`).join('') +
+      (s.list ? `<ul>${s.list.map((li) => `<li>${li}</li>`).join('')}</ul>` : '')).join('')}</article>`,
+  })),
   // 앱 내부 화면: 색인하지 않는다 (사진을 올린 뒤에만 의미가 있는 화면)
   { path: '/analysis', title: `분석 중 | ${NAME}`, noindex: true },
   { path: '/result', title: `분석 결과 | ${NAME}`, noindex: true },
@@ -102,7 +120,7 @@ for (const r of ROUTES) {
 // sitemap: 색인 대상 경로만, 날짜는 빌드한 날
 const today = new Date().toISOString().slice(0, 10);
 const urls = ROUTES.filter((r) => !r.noindex)
-  .map((r) => `  <url>\n    <loc>${SITE}${r.path}</loc>\n    <lastmod>${today}</lastmod>\n  </url>`)
+  .map((r) => `  <url>\n    <loc>${SITE}${r.path}</loc>\n    <lastmod>${r.lastmod ?? today}</lastmod>\n  </url>`)
   .join('\n');
 writeFileSync(join(DIST, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);

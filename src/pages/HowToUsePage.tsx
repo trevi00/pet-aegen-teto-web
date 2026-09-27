@@ -176,21 +176,21 @@ const HowToUsePage: React.FC = () => {
             <div className="bg-gradient-to-r from-[#ffe4f3] to-[#fff0f5] rounded-[12px] p-4">
               <h4 className="text-[14px] font-bold text-[#e91e63] mb-2">에겐 80% 이상</h4>
               <p className="text-[12px] text-[#555555]">
-                순수하고 사랑스러운 매력이 넘치는 타입! 보는 사람을 행복하게 만드는 천사같은 아이에요.
+                사진 속 모습이 뚜렷하게 차분하고 신중한 쪽이에요. 느긋하고 조용한 분위기가 잘 드러난 사진이에요.
               </p>
             </div>
 
             <div className="bg-gradient-to-r from-[#e8eaf6] to-[#f3e5f5] rounded-[12px] p-4">
               <h4 className="text-[14px] font-bold text-[#673ab7] mb-2">테토 80% 이상</h4>
               <p className="text-[12px] text-[#555555]">
-                시크하고 도도한 매력의 소유자! 카리스마 넘치는 눈빛으로 시선을 사로잡는 아이에요.
+                사진 속 모습이 뚜렷하게 활발하고 적극적인 쪽이에요. 에너지와 야성미가 잘 드러난 사진이에요.
               </p>
             </div>
 
             <div className="bg-gradient-to-r from-[#fff3e0] to-[#fffde7] rounded-[12px] p-4">
               <h4 className="text-[14px] font-bold text-[#ff9800] mb-2">균형 (40-60%)</h4>
               <p className="text-[12px] text-[#555555]">
-                에겐과 테토의 매력을 모두 가진 타입! 상황에 따라 다양한 모습을 보여주는 아이에요.
+                차분한 면과 활발한 면이 비슷하게 보이는 사진이에요. 다른 순간의 사진으로 한 번 더 해 보면 재미있어요.
               </p>
             </div>
           </div>

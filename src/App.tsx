@@ -9,6 +9,7 @@ import HowToUsePage from './pages/HowToUsePage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
 import NotFoundPage from './pages/NotFoundPage';
+import { GuideListPage, GuidePage } from './pages/GuidePages';
 import AdLayout from './components/AdLayout';
 import Footer from './components/Footer';
 
@@ -25,6 +26,8 @@ function App() {
           <Route path="/how-to-use" element={<HowToUsePage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
+          <Route path="/guide" element={<GuideListPage />} />
+          <Route path="/guide/:slug" element={<GuidePage />} />
           <Route path="/admin/metrics" element={<MetricsPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
