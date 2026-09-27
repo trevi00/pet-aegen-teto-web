@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
             에겐vs테토 테스트
           </h3>
           <p className="text-[12px] text-[#888888]">
-            AI가 분석하는 반려동물 성격 테스트
+            사진으로 알아보는 반려동물 에겐·테토 성향
           </p>
         </div>
 
@@ -42,6 +42,12 @@ const Footer: React.FC = () => {
             className={`text-[13px] ${location.pathname === '/faq' ? 'text-[#FFB5EB] font-medium' : 'text-[#666666]'} hover:text-[#FFB5EB] transition-colors`}
           >
             자주 묻는 질문
+          </Link>
+          <Link
+            to="/guide"
+            className={`text-[13px] ${location.pathname.startsWith('/guide') ? 'text-[#FFB5EB] font-medium' : 'text-[#666666]'} hover:text-[#FFB5EB] transition-colors`}
+          >
+            가이드
           </Link>
         </div>
 

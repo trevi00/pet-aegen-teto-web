@@ -67,24 +67,24 @@ const HomePage: React.FC = () => {
           <div className="space-y-4">
             <div className="bg-gradient-to-r from-[#FFF5FB] to-[#F8F9FF] rounded-[12px] p-4">
               <div className="flex items-start gap-3">
-                <span className="text-[24px]">😇</span>
+                <span className="text-[24px]">😌</span>
                 <div>
                   <h4 className="font-bold text-[14px] text-[#FF9ED8] mb-1">에겐 (Aegen)</h4>
                   <p className="text-[12px] text-[#666666] leading-relaxed">
-                    순수하고 착한 천사 같은 성격! 온순하고 사랑스러운 모습으로
-                    주인의 마음을 녹이는 타입입니다. 얌전하고 예의 바른 모습이 특징이에요.
+                    차분하고 신중한 타입이에요. 가만히 앉아 주변을 살피는 모습,
+                    부드러운 눈빛과 느긋한 자세처럼 조용히 스며드는 매력이 특징이에요.
                   </p>
                 </div>
               </div>
             </div>
             <div className="bg-gradient-to-r from-[#F8F9FF] to-[#FFF5FB] rounded-[12px] p-4">
               <div className="flex items-start gap-3">
-                <span className="text-[24px]">😈</span>
+                <span className="text-[24px]">🔥</span>
                 <div>
                   <h4 className="font-bold text-[14px] text-[#9DB4FF] mb-1">테토 (Teto)</h4>
                   <p className="text-[12px] text-[#666666] leading-relaxed">
-                    장난기 가득한 개구쟁이! 호기심 많고 활발한 성격으로
-                    매일 새로운 모험을 찾아다니는 타입입니다. 똑똒하고 재치있는 모습이 매력이에요.
+                    활발하고 적극적인 타입이에요. 뛰어오를 것 같은 자세,
+                    반짝이는 눈빛과 힘 있는 표정처럼 야성적이고 에너지 넘치는 매력이 특징이에요.
                   </p>
                 </div>
               </div>
@@ -250,7 +250,7 @@ const HomePage: React.FC = () => {
             <div className="bg-[#F8F9FF] rounded-[12px] p-3 text-center">
               <div className="text-[24px] mb-1">🤖</div>
               <p className="text-[11px] font-bold text-[#9DB4FF]">AI 기술</p>
-              <p className="text-[10px] text-[#888888]">최신 AI 이미지 분석</p>
+              <p className="text-[10px] text-[#888888]">반려동물 사진으로 학습</p>
             </div>
             <div className="bg-[#FFF8FC] rounded-[12px] p-3 text-center">
               <div className="text-[24px] mb-1">🔒</div>
@@ -320,6 +320,12 @@ const HomePage: React.FC = () => {
         {/* Navigation Links */}
         <div className="flex justify-center gap-3 flex-wrap mb-6">
           <Link
+            to="/guide"
+            className="px-4 py-2 text-[12px] text-[#888888] bg-white rounded-full shadow-sm hover:shadow-md transition-shadow"
+          >
+            에겐테토 가이드
+          </Link>
+          <Link
             to="/about"
             className="px-4 py-2 text-[12px] text-[#888888] bg-white rounded-full shadow-sm hover:shadow-md transition-shadow"
           >
@@ -343,8 +349,8 @@ const HomePage: React.FC = () => {
         <div className="text-center px-4 mb-4">
           <p className="text-[11px] text-[#999999] leading-relaxed">
             반려동물 에겐vs테토 테스트는 AI 기술을 활용한 재미있는 성격 분석 서비스입니다.
-            강아지와 고양이의 사진을 분석하여 천사 같은 '에겐' 성향인지,
-            장난꾸러기 '테토' 성향인지 알려드립니다.
+            강아지와 고양이의 사진을 분석하여 차분하고 신중한 '에겐' 쪽인지,
+            활발하고 적극적인 '테토' 쪽인지 비율로 알려드립니다.
             결과는 엔터테인먼트 목적으로 제공되며,
             실제 반려동물의 성격을 과학적으로 판단하는 것은 아닙니다.
           </p>
