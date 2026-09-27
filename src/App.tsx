@@ -8,6 +8,7 @@ import FaqPage from './pages/FaqPage';
 import HowToUsePage from './pages/HowToUsePage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
+import NotFoundPage from './pages/NotFoundPage';
 import AdLayout from './components/AdLayout';
 import Footer from './components/Footer';
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/admin/metrics" element={<MetricsPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Footer />
       </AdLayout>
