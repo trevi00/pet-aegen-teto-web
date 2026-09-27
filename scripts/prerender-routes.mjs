@@ -5,12 +5,16 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
 const GUIDES = JSON.parse(readFileSync('src/content/guides.json', 'utf8'));
+const TYPES = JSON.parse(readFileSync('src/content/types.json', 'utf8'));
+const { summary: SUMMARY, breeds: BREEDS } = JSON.parse(readFileSync('src/content/breeds.json', 'utf8'));
+const SP = (s) => (s === 'cat' ? '고양이' : '강아지');
+const PCT = (a, b) => `${((100 * a) / b).toFixed(0)}%`;
 
 const SITE = 'https://agtt.cloud';
 const NAME = '반려동물 에겐테토 테스트';
 const DIST = 'dist';
 
-const NAV = `<nav><a href="/">테스트 하기</a> · <a href="/about">서비스 소개</a> · <a href="/how-to-use">사용 방법</a> · <a href="/faq">자주 묻는 질문</a> · <a href="/guide">가이드</a> · <a href="/privacy">개인정보처리방침</a> · <a href="/terms">이용약관</a></nav>`;
+const NAV = `<nav><a href="/">테스트 하기</a> · <a href="/about">서비스 소개</a> · <a href="/how-to-use">사용 방법</a> · <a href="/faq">자주 묻는 질문</a> · <a href="/guide">가이드</a> · <a href="/type">5가지 유형</a> · <a href="/breed">품종별 통계</a> · <a href="/privacy">개인정보처리방침</a> · <a href="/terms">이용약관</a></nav>`;
 
 const ROUTES = [
   {
@@ -72,6 +76,38 @@ const ROUTES = [
       (s.heading ? `<h2>${s.heading}</h2>` : '') +
       (s.paragraphs ?? []).map((p) => `<p>${p}</p>`).join('') +
       (s.list ? `<ul>${s.list.map((li) => `<li>${li}</li>`).join('')}</ul>` : '')).join('')}</article>`,
+  })),
+  {
+    path: '/type',
+    title: `에겐테토 5가지 유형 | ${NAME}`,
+    description: '순수 에겐부터 순수 테토까지, 결과의 에겐 비율에 따른 다섯 유형과 각 유형의 특징을 소개해요.',
+    body: `<h1>에겐테토 5가지 유형</h1><ul>${TYPES.map((t) => `<li><a href="/type/${t.slug}">${t.name}</a> (${t.range}) — ${t.headline}</li>`).join('')}</ul>`,
+  },
+  ...TYPES.map((t) => ({
+    path: `/type/${t.slug}`,
+    title: `${t.name} 유형 (${t.range}) | ${NAME}`,
+    description: `${t.headline}. ${t.description.slice(0, 80)}…`,
+    body: `<article><h1>${t.name}</h1><p>${t.range}</p><p><strong>${t.headline}</strong></p><p>${t.description}</p>`
+      + `<h2>사진에서 보이는 신호</h2><ul>${t.signals.map((s) => `<li>${s}</li>`).join('')}</ul>`
+      + `<h2>이 유형이 많이 나온 품종</h2><ol>${[...BREEDS].sort((a, b) => b.dist[t.slug] / b.n - a.dist[t.slug] / a.n).slice(0, 5)
+          .map((b) => `<li><a href="/breed/${b.slug}">${b.ko}</a> ${PCT(b.dist[t.slug], b.n)}</li>`).join('')}</ol>`
+      + `<h2>보호자님께</h2><ul>${t.tips.map((s) => `<li>${s}</li>`).join('')}</ul></article>`,
+  })),
+  {
+    path: '/breed',
+    title: `품종별 에겐·테토 통계 (37품종 ${SUMMARY.images.toLocaleString()}장) | ${NAME}`,
+    description: `고양이 12품종과 강아지 25품종 사진 ${SUMMARY.images.toLocaleString()}장을 AI로 분석한 품종별 평균 에겐 비율과 유형 분포예요.`,
+    body: `<h1>품종별 에겐·테토 통계</h1><p>고양이 평균 에겐 ${SUMMARY.meanCat}%, 강아지 평균 에겐 ${SUMMARY.meanDog}%.</p><ul>${[...BREEDS].sort((a, b) => b.mean - a.mean)
+      .map((b) => `<li><a href="/breed/${b.slug}">${b.ko}</a> (${SP(b.species)}) 평균 에겐 ${b.mean}%</li>`).join('')}</ul>`,
+  },
+  ...BREEDS.map((b) => ({
+    path: `/breed/${b.slug}`,
+    title: `${b.ko}, 에겐일까 테토일까? 사진 ${b.n}장 AI 분석 | ${NAME}`,
+    description: `${b.ko} 사진 ${b.n}장을 AI로 분석한 결과 평균 에겐 비율 ${b.mean}%, 에겐 쪽으로 나온 사진 ${b.aegenShare}%. 알려진 성향(${b.known})과 비교해 봤어요.`,
+    body: `<article><h1>${b.ko}</h1><p>${SP(b.species)}</p><img src="${b.rep.image}" alt="${b.ko} 대표 사진" width="480"><p>${b.intro}</p>`
+      + `<h2>AI 판정 결과</h2><p>사진 ${b.n}장, 평균 에겐 비율 ${b.mean}%, 에겐 쪽으로 나온 사진 ${b.aegenShare}%.</p>`
+      + `<ul>${TYPES.map((t) => `<li><a href="/type/${t.slug}">${t.name}</a> ${PCT(b.dist[t.slug], b.n)}</li>`).join('')}</ul>`
+      + `<h2>알려진 성향과 비교</h2><p>일반적으로 알려진 성향: ${b.known}</p></article>`,
   })),
   // 앱 내부 화면: 색인하지 않는다 (사진을 올린 뒤에만 의미가 있는 화면)
   { path: '/analysis', title: `분석 중 | ${NAME}`, noindex: true },

@@ -326,6 +326,18 @@ const HomePage: React.FC = () => {
             에겐테토 가이드
           </Link>
           <Link
+            to="/type"
+            className="px-4 py-2 text-[12px] text-[#888888] bg-white rounded-full shadow-sm hover:shadow-md transition-shadow"
+          >
+            5가지 유형
+          </Link>
+          <Link
+            to="/breed"
+            className="px-4 py-2 text-[12px] text-[#888888] bg-white rounded-full shadow-sm hover:shadow-md transition-shadow"
+          >
+            품종별 통계
+          </Link>
+          <Link
             to="/about"
             className="px-4 py-2 text-[12px] text-[#888888] bg-white rounded-full shadow-sm hover:shadow-md transition-shadow"
           >

@@ -1,0 +1,945 @@
+{
+ "summary": {
+  "images": 7349,
+  "breeds": 37,
+  "cats": 2371,
+  "dogs": 4978,
+  "meanCat": 63.5,
+  "meanDog": 40.7,
+  "overallDist": {
+   "pure-aegen": 1811,
+   "aegen": 1519,
+   "balanced": 312,
+   "teto": 1405,
+   "pure-teto": 2302
+  },
+  "knownVsAiPearson": -0.19
+ },
+ "breeds": [
+  {
+   "key": "abyssinian",
+   "slug": "abyssinian",
+   "ko": "아비시니안",
+   "species": "cat",
+   "intro": "짧고 윤기 나는 털에 한 올 한 올 띠무늬(티킹)가 있는 고양이예요. 호기심이 많고 가만히 있는 시간이 적은 활동적인 품종으로 알려져 있어요.",
+   "known": "매우 활동적·호기심 많음",
+   "knownScore": 0.8,
+   "n": 198,
+   "mean": 57.9,
+   "median": 73.7,
+   "aegenShare": 62.6,
+   "dist": {
+    "pure-aegen": 65,
+    "aegen": 56,
+    "balanced": 10,
+    "teto": 34,
+    "pure-teto": 33
+   },
+   "rep": {
+    "file": "Abyssinian_217.jpg",
+    "score": 73.4,
+    "image": "/images/breeds/abyssinian.webp"
+   }
+  },
+  {
+   "key": "american_bulldog",
+   "slug": "american-bulldog",
+   "ko": "아메리칸 불독",
+   "species": "dog",
+   "intro": "넓은 가슴과 단단한 근육을 가진 중대형견이에요. 힘이 세고 활동적이지만 가족에게는 다정한 편으로 알려져 있어요.",
+   "known": "힘세고 활동적",
+   "knownScore": 0.6,
+   "n": 200,
+   "mean": 27.2,
+   "median": 17.3,
+   "aegenShare": 14.5,
+   "dist": {
+    "pure-aegen": 24,
+    "aegen": 4,
+    "balanced": 2,
+    "teto": 31,
+    "pure-teto": 139
+   },
+   "rep": {
+    "file": "american_bulldog_122.jpg",
+    "score": 17.3,
+    "image": "/images/breeds/american-bulldog.webp"
+   }
+  },
+  {
+   "key": "american_pit_bull_terrier",
+   "slug": "american-pit-bull-terrier",
+   "ko": "아메리칸 핏불 테리어",
+   "species": "dog",
+   "intro": "근육질의 몸과 넓은 머리가 특징이에요. 에너지가 많아 충분한 운동이 필요한 품종으로 알려져 있어요.",
+   "known": "고에너지·근육질",
+   "knownScore": 0.8,
+   "n": 200,
+   "mean": 21.5,
+   "median": 18.2,
+   "aegenShare": 3.5,
+   "dist": {
+    "pure-aegen": 3,
+    "aegen": 4,
+    "balanced": 2,
+    "teto": 56,
+    "pure-teto": 135
+   },
+   "rep": {
+    "file": "american_pit_bull_terrier_159.jpg",
+    "score": 18.2,
+    "image": "/images/breeds/american-pit-bull-terrier.webp"
+   }
+  },
+  {
+   "key": "basset_hound",
+   "slug": "basset-hound",
+   "ko": "바셋 하운드",
+   "species": "dog",
+   "intro": "짧은 다리, 길게 늘어진 귀, 처진 눈이 특징인 후각 사냥견이에요. 움직임이 여유롭고 느긋한 성격으로 유명해요.",
+   "known": "느긋·저에너지",
+   "knownScore": -0.9,
+   "n": 200,
+   "mean": 21.6,
+   "median": 17.9,
+   "aegenShare": 4.0,
+   "dist": {
+    "pure-aegen": 1,
+    "aegen": 7,
+    "balanced": 1,
+    "teto": 47,
+    "pure-teto": 144
+   },
+   "rep": {
+    "file": "basset_hound_153.jpg",
+    "score": 17.9,
+    "image": "/images/breeds/basset-hound.webp"
+   }
+  },
+  {
+   "key": "beagle",
+   "slug": "beagle",
+   "ko": "비글",
+   "species": "dog",
+   "intro": "뛰어난 후각으로 토끼 사냥을 하던 소형 사냥견이에요. 냄새를 쫓아 쉬지 않고 탐색하는 활발한 품종으로 알려져 있어요.",
+   "known": "활발·후각 탐색",
+   "knownScore": 0.7,
+   "n": 200,
+   "mean": 26.1,
+   "median": 18.7,
+   "aegenShare": 11.0,
+   "dist": {
+    "pure-aegen": 9,
+    "aegen": 13,
+    "balanced": 4,
+    "teto": 56,
+    "pure-teto": 118
+   },
+   "rep": {
+    "file": "beagle_1.jpg",
+    "score": 18.7,
+    "image": "/images/breeds/beagle.webp"
+   }
+  },
+  {
+   "key": "bengal",
+   "slug": "bengal",
+   "ko": "벵갈",
+   "species": "cat",
+   "intro": "야생 고양이를 닮은 점박이 무늬가 특징이에요. 에너지가 넘치고 높은 곳에 오르거나 물장난을 즐기는 개체도 많다고 알려져 있어요.",
+   "known": "고에너지·야생 고양이 같은 외모",
+   "knownScore": 1.0,
+   "n": 200,
+   "mean": 48.4,
+   "median": 39.2,
+   "aegenShare": 47.5,
+   "dist": {
+    "pure-aegen": 37,
+    "aegen": 52,
+    "balanced": 10,
+    "teto": 64,
+    "pure-teto": 37
+   },
+   "rep": {
+    "file": "Bengal_183.jpg",
+    "score": 39.4,
+    "image": "/images/breeds/bengal.webp"
+   }
+  },
+  {
+   "key": "birman",
+   "slug": "birman",
+   "ko": "버만",
+   "species": "cat",
+   "intro": "푸른 눈과 흰 양말을 신은 듯한 발이 특징인 장모종이에요. 온순하고 조용하며 사람을 잘 따르는 편으로 알려져 있어요.",
+   "known": "온순·조용함",
+   "knownScore": -0.6,
+   "n": 200,
+   "mean": 81.0,
+   "median": 83.6,
+   "aegenShare": 97.5,
+   "dist": {
+    "pure-aegen": 173,
+    "aegen": 22,
+    "balanced": 0,
+    "teto": 1,
+    "pure-teto": 4
+   },
+   "rep": {
+    "file": "Birman_111.jpg",
+    "score": 83.6,
+    "image": "/images/breeds/birman.webp"
+   }
+  },
+  {
+   "key": "bombay",
+   "slug": "bombay",
+   "ko": "봄베이",
+   "species": "cat",
+   "intro": "윤기 나는 검은 털과 구릿빛 눈 때문에 '작은 흑표범'이라고도 불려요. 애교가 많고 적당히 활발한 편이에요.",
+   "known": "애교 많고 적당히 활발",
+   "knownScore": 0.0,
+   "n": 184,
+   "mean": 54.0,
+   "median": 61.5,
+   "aegenShare": 57.6,
+   "dist": {
+    "pure-aegen": 45,
+    "aegen": 50,
+    "balanced": 21,
+    "teto": 36,
+    "pure-teto": 32
+   },
+   "rep": {
+    "file": "Bombay_162.jpg",
+    "score": 61.7,
+    "image": "/images/breeds/bombay.webp"
+   }
+  },
+  {
+   "key": "boxer",
+   "slug": "boxer",
+   "ko": "복서",
+   "species": "dog",
+   "intro": "각진 얼굴과 탄탄한 몸을 가진 독일 출신 견종이에요. 장난기가 많고 앞발로 치듯이 노는 모습에서 이름이 왔다는 이야기도 있어요.",
+   "known": "매우 활발·장난기",
+   "knownScore": 0.9,
+   "n": 199,
+   "mean": 23.0,
+   "median": 18.0,
+   "aegenShare": 7.5,
+   "dist": {
+    "pure-aegen": 4,
+    "aegen": 10,
+    "balanced": 4,
+    "teto": 44,
+    "pure-teto": 137
+   },
+   "rep": {
+    "file": "boxer_146.jpg",
+    "score": 18.0,
+    "image": "/images/breeds/boxer.webp"
+   }
+  },
+  {
+   "key": "british_shorthair",
+   "slug": "british-shorthair",
+   "ko": "브리티시 숏헤어",
+   "species": "cat",
+   "intro": "둥근 얼굴과 통통한 볼, 촘촘한 털이 특징이에요. 느긋하고 점잖아서 혼자서도 잘 지내는 편으로 알려져 있어요.",
+   "known": "느긋·점잖음",
+   "knownScore": -0.8,
+   "n": 200,
+   "mean": 40.8,
+   "median": 26.9,
+   "aegenShare": 36.0,
+   "dist": {
+    "pure-aegen": 18,
+    "aegen": 47,
+    "balanced": 11,
+    "teto": 64,
+    "pure-teto": 60
+   },
+   "rep": {
+    "file": "British_Shorthair_43.jpg",
+    "score": 26.9,
+    "image": "/images/breeds/british-shorthair.webp"
+   }
+  },
+  {
+   "key": "chihuahua",
+   "slug": "chihuahua",
+   "ko": "치와와",
+   "species": "dog",
+   "intro": "가장 작은 견종 중 하나로 큰 눈과 귀가 특징이에요. 몸은 작지만 경계심과 기세가 강한 편으로 알려져 있어요.",
+   "known": "작지만 기세가 강함",
+   "knownScore": 0.3,
+   "n": 200,
+   "mean": 41.0,
+   "median": 29.2,
+   "aegenShare": 32.5,
+   "dist": {
+    "pure-aegen": 19,
+    "aegen": 39,
+    "balanced": 15,
+    "teto": 79,
+    "pure-teto": 48
+   },
+   "rep": {
+    "file": "chihuahua_185.jpg",
+    "score": 29.2,
+    "image": "/images/breeds/chihuahua.webp"
+   }
+  },
+  {
+   "key": "egyptian_mau",
+   "slug": "egyptian-mau",
+   "ko": "이집션 마우",
+   "species": "cat",
+   "intro": "자연스럽게 생긴 점무늬를 가진 몇 안 되는 품종이에요. 날렵하고 활동적이며 빠르게 달리는 고양이로 알려져 있어요.",
+   "known": "빠르고 활동적",
+   "knownScore": 0.7,
+   "n": 190,
+   "mean": 59.6,
+   "median": 71.5,
+   "aegenShare": 68.9,
+   "dist": {
+    "pure-aegen": 55,
+    "aegen": 61,
+    "balanced": 21,
+    "teto": 33,
+    "pure-teto": 20
+   },
+   "rep": {
+    "file": "Egyptian_Mau_224.jpg",
+    "score": 71.7,
+    "image": "/images/breeds/egyptian-mau.webp"
+   }
+  },
+  {
+   "key": "english_cocker_spaniel",
+   "slug": "english-cocker-spaniel",
+   "ko": "잉글리시 코커 스패니얼",
+   "species": "dog",
+   "intro": "물결치는 긴 귀와 부드러운 털이 특징인 조렵견이에요. 명랑하고 꼬리를 자주 흔드는 활동적인 품종으로 알려져 있어요.",
+   "known": "명랑·활동적",
+   "knownScore": 0.4,
+   "n": 196,
+   "mean": 28.6,
+   "median": 18.2,
+   "aegenShare": 16.3,
+   "dist": {
+    "pure-aegen": 11,
+    "aegen": 19,
+    "balanced": 4,
+    "teto": 44,
+    "pure-teto": 118
+   },
+   "rep": {
+    "file": "english_cocker_spaniel_10.jpg",
+    "score": 18.2,
+    "image": "/images/breeds/english-cocker-spaniel.webp"
+   }
+  },
+  {
+   "key": "english_setter",
+   "slug": "english-setter",
+   "ko": "잉글리시 세터",
+   "species": "dog",
+   "intro": "점무늬가 흩뿌려진 긴 털을 가진 우아한 조렵견이에요. 성격은 온화하지만 운동량이 많은 품종이에요.",
+   "known": "온화하지만 운동량 많음",
+   "knownScore": 0.3,
+   "n": 200,
+   "mean": 17.7,
+   "median": 15.7,
+   "aegenShare": 1.5,
+   "dist": {
+    "pure-aegen": 1,
+    "aegen": 2,
+    "balanced": 1,
+    "teto": 15,
+    "pure-teto": 181
+   },
+   "rep": {
+    "file": "english_setter_128.jpg",
+    "score": 15.7,
+    "image": "/images/breeds/english-setter.webp"
+   }
+  },
+  {
+   "key": "german_shorthaired",
+   "slug": "german-shorthaired",
+   "ko": "저먼 쇼트헤어드 포인터",
+   "species": "dog",
+   "intro": "사냥감을 가리키는(포인팅) 일을 하던 다재다능한 사냥견이에요. 에너지가 매우 높아 하루 운동량이 많이 필요한 품종으로 알려져 있어요.",
+   "known": "최상위 에너지 사냥견",
+   "knownScore": 1.0,
+   "n": 200,
+   "mean": 19.5,
+   "median": 17.6,
+   "aegenShare": 1.0,
+   "dist": {
+    "pure-aegen": 0,
+    "aegen": 2,
+    "balanced": 3,
+    "teto": 51,
+    "pure-teto": 144
+   },
+   "rep": {
+    "file": "german_shorthaired_110.jpg",
+    "score": 17.6,
+    "image": "/images/breeds/german-shorthaired.webp"
+   }
+  },
+  {
+   "key": "great_pyrenees",
+   "slug": "great-pyrenees",
+   "ko": "그레이트 피레니즈",
+   "species": "dog",
+   "intro": "눈처럼 흰 털을 가진 대형 목양견이에요. 가축을 지키던 개답게 조용하고 듬직하며 차분한 편이에요.",
+   "known": "차분·듬직한 경비견",
+   "knownScore": -0.7,
+   "n": 200,
+   "mean": 45.4,
+   "median": 31.9,
+   "aegenShare": 41.0,
+   "dist": {
+    "pure-aegen": 33,
+    "aegen": 44,
+    "balanced": 13,
+    "teto": 57,
+    "pure-teto": 53
+   },
+   "rep": {
+    "file": "great_pyrenees_38.jpg",
+    "score": 32.0,
+    "image": "/images/breeds/great-pyrenees.webp"
+   }
+  },
+  {
+   "key": "havanese",
+   "slug": "havanese",
+   "ko": "하바니즈",
+   "species": "dog",
+   "intro": "쿠바 출신의 작고 부드러운 장모견이에요. 사람을 좋아하고 온순하며 사교적인 반려견으로 알려져 있어요.",
+   "known": "온순·사교적",
+   "knownScore": -0.1,
+   "n": 200,
+   "mean": 64.6,
+   "median": 77.2,
+   "aegenShare": 75.5,
+   "dist": {
+    "pure-aegen": 73,
+    "aegen": 73,
+    "balanced": 10,
+    "teto": 22,
+    "pure-teto": 22
+   },
+   "rep": {
+    "file": "havanese_52.jpg",
+    "score": 77.2,
+    "image": "/images/breeds/havanese.webp"
+   }
+  },
+  {
+   "key": "japanese_chin",
+   "slug": "japanese-chin",
+   "ko": "재패니즈 친",
+   "species": "dog",
+   "intro": "납작한 얼굴과 비단 같은 털을 가진 소형견이에요. 고양이 같다는 말을 들을 만큼 점잖고 우아한 품종으로 알려져 있어요.",
+   "known": "고양이 같은 점잖음·우아함",
+   "knownScore": -0.8,
+   "n": 200,
+   "mean": 30.5,
+   "median": 18.9,
+   "aegenShare": 18.5,
+   "dist": {
+    "pure-aegen": 14,
+    "aegen": 21,
+    "balanced": 7,
+    "teto": 47,
+    "pure-teto": 111
+   },
+   "rep": {
+    "file": "japanese_chin_55.jpg",
+    "score": 18.9,
+    "image": "/images/breeds/japanese-chin.webp"
+   }
+  },
+  {
+   "key": "keeshond",
+   "slug": "keeshond",
+   "ko": "키스혼드",
+   "species": "dog",
+   "intro": "풍성한 은회색 털과 눈가의 '안경' 무늬가 특징이에요. 명랑하지만 지나치게 들뜨지 않는 중간 에너지의 품종이에요.",
+   "known": "명랑하지만 중간 에너지",
+   "knownScore": 0.0,
+   "n": 199,
+   "mean": 58.6,
+   "median": 73.7,
+   "aegenShare": 64.8,
+   "dist": {
+    "pure-aegen": 71,
+    "aegen": 55,
+    "balanced": 7,
+    "teto": 39,
+    "pure-teto": 27
+   },
+   "rep": {
+    "file": "keeshond_115.jpg",
+    "score": 73.7,
+    "image": "/images/breeds/keeshond.webp"
+   }
+  },
+  {
+   "key": "leonberger",
+   "slug": "leonberger",
+   "ko": "레온베르거",
+   "species": "dog",
+   "intro": "사자를 닮은 갈기 같은 털을 가진 초대형견이에요. 크고 힘이 세지만 성격은 부드럽고 온화한 편이에요.",
+   "known": "온화한 대형견",
+   "knownScore": -0.4,
+   "n": 200,
+   "mean": 37.7,
+   "median": 23.4,
+   "aegenShare": 29.0,
+   "dist": {
+    "pure-aegen": 34,
+    "aegen": 22,
+    "balanced": 5,
+    "teto": 59,
+    "pure-teto": 80
+   },
+   "rep": {
+    "file": "leonberger_6.jpg",
+    "score": 23.5,
+    "image": "/images/breeds/leonberger.webp"
+   }
+  },
+  {
+   "key": "maine_coon",
+   "slug": "maine-coon",
+   "ko": "메인쿤",
+   "species": "cat",
+   "intro": "가장 큰 고양이 품종 중 하나로 풍성한 꼬리와 귀 끝의 털이 특징이에요. 몸집에 비해 온화해서 '온순한 거인'이라고 불리지만 놀이도 좋아해요.",
+   "known": "온화한 대형묘·놀기도 좋아함",
+   "knownScore": -0.2,
+   "n": 200,
+   "mean": 61.8,
+   "median": 75.8,
+   "aegenShare": 71.0,
+   "dist": {
+    "pure-aegen": 75,
+    "aegen": 56,
+    "balanced": 17,
+    "teto": 27,
+    "pure-teto": 25
+   },
+   "rep": {
+    "file": "Maine_Coon_140.jpg",
+    "score": 75.5,
+    "image": "/images/breeds/maine-coon.webp"
+   }
+  },
+  {
+   "key": "miniature_pinscher",
+   "slug": "miniature-pinscher",
+   "ko": "미니어처 핀셔",
+   "species": "dog",
+   "intro": "작은 도베르만처럼 생긴 소형견이에요. 작은 체구에 넘치는 에너지와 대담함으로 유명해요.",
+   "known": "작은 체구의 고에너지",
+   "knownScore": 0.8,
+   "n": 200,
+   "mean": 31.2,
+   "median": 22.4,
+   "aegenShare": 15.5,
+   "dist": {
+    "pure-aegen": 9,
+    "aegen": 20,
+    "balanced": 10,
+    "teto": 83,
+    "pure-teto": 78
+   },
+   "rep": {
+    "file": "miniature_pinscher_143.jpg",
+    "score": 22.4,
+    "image": "/images/breeds/miniature-pinscher.webp"
+   }
+  },
+  {
+   "key": "newfoundland",
+   "slug": "newfoundland",
+   "ko": "뉴펀들랜드",
+   "species": "dog",
+   "intro": "물갈퀴가 있는 발과 두꺼운 털로 수난 구조견으로 활약해 온 초대형견이에요. 매우 온화하고 느긋한 성격으로 유명해요.",
+   "known": "매우 온화·느긋",
+   "knownScore": -0.9,
+   "n": 196,
+   "mean": 40.1,
+   "median": 23.8,
+   "aegenShare": 33.2,
+   "dist": {
+    "pure-aegen": 38,
+    "aegen": 23,
+    "balanced": 12,
+    "teto": 44,
+    "pure-teto": 79
+   },
+   "rep": {
+    "file": "newfoundland_105.jpg",
+    "score": 23.7,
+    "image": "/images/breeds/newfoundland.webp"
+   }
+  },
+  {
+   "key": "persian",
+   "slug": "persian",
+   "ko": "페르시안",
+   "species": "cat",
+   "intro": "길고 풍성한 털과 납작한 얼굴이 특징이에요. 조용하고 우아하며 활동량이 적은 편이라 차분한 고양이의 대표로 꼽혀요.",
+   "known": "매우 차분·우아함",
+   "knownScore": -1.0,
+   "n": 200,
+   "mean": 62.6,
+   "median": 74.5,
+   "aegenShare": 73.0,
+   "dist": {
+    "pure-aegen": 66,
+    "aegen": 68,
+    "balanced": 18,
+    "teto": 35,
+    "pure-teto": 13
+   },
+   "rep": {
+    "file": "Persian_137.jpg",
+    "score": 74.5,
+    "image": "/images/breeds/persian.webp"
+   }
+  },
+  {
+   "key": "pomeranian",
+   "slug": "pomeranian",
+   "ko": "포메라니안",
+   "species": "dog",
+   "intro": "솜사탕 같은 풍성한 털과 여우 같은 얼굴이 특징인 소형견이에요. 활발하고 경계심이 있어 잘 짖는 편으로 알려져 있어요.",
+   "known": "활발·경계심",
+   "knownScore": 0.4,
+   "n": 200,
+   "mean": 69.6,
+   "median": 78.8,
+   "aegenShare": 84.5,
+   "dist": {
+    "pure-aegen": 86,
+    "aegen": 76,
+    "balanced": 7,
+    "teto": 18,
+    "pure-teto": 13
+   },
+   "rep": {
+    "file": "pomeranian_155.jpg",
+    "score": 78.8,
+    "image": "/images/breeds/pomeranian.webp"
+   }
+  },
+  {
+   "key": "pug",
+   "slug": "pug",
+   "ko": "퍼그",
+   "species": "dog",
+   "intro": "주름진 얼굴과 말린 꼬리가 특징인 소형견이에요. 활동량이 많지 않고 사람 곁에서 느긋하게 쉬는 걸 좋아해요.",
+   "known": "느긋·애교",
+   "knownScore": -0.5,
+   "n": 200,
+   "mean": 68.9,
+   "median": 78.7,
+   "aegenShare": 81.5,
+   "dist": {
+    "pure-aegen": 83,
+    "aegen": 75,
+    "balanced": 13,
+    "teto": 15,
+    "pure-teto": 14
+   },
+   "rep": {
+    "file": "pug_15.jpg",
+    "score": 78.7,
+    "image": "/images/breeds/pug.webp"
+   }
+  },
+  {
+   "key": "ragdoll",
+   "slug": "ragdoll",
+   "ko": "랙돌",
+   "species": "cat",
+   "intro": "안으면 몸에 힘을 빼고 인형처럼 늘어진다고 해서 이름이 붙었어요. 매우 온순하고 사람 곁에 머무는 걸 좋아하는 품종으로 알려져 있어요.",
+   "known": "매우 온순·안기면 늘어짐",
+   "knownScore": -1.0,
+   "n": 200,
+   "mean": 80.8,
+   "median": 82.6,
+   "aegenShare": 99.5,
+   "dist": {
+    "pure-aegen": 149,
+    "aegen": 48,
+    "balanced": 2,
+    "teto": 1,
+    "pure-teto": 0
+   },
+   "rep": {
+    "file": "Ragdoll_114.jpg",
+    "score": 82.6,
+    "image": "/images/breeds/ragdoll.webp"
+   }
+  },
+  {
+   "key": "russian_blue",
+   "slug": "russian-blue",
+   "ko": "러시안 블루",
+   "species": "cat",
+   "intro": "은빛이 도는 푸른 회색 털과 초록 눈이 특징이에요. 조심스럽고 낯을 가리는 편이지만 가족에게는 다정한 품종으로 알려져 있어요.",
+   "known": "조심스럽고 조용함",
+   "knownScore": -0.5,
+   "n": 200,
+   "mean": 62.8,
+   "median": 74.2,
+   "aegenShare": 73.0,
+   "dist": {
+    "pure-aegen": 69,
+    "aegen": 72,
+    "balanced": 9,
+    "teto": 30,
+    "pure-teto": 20
+   },
+   "rep": {
+    "file": "Russian_Blue_118.jpg",
+    "score": 74.0,
+    "image": "/images/breeds/russian-blue.webp"
+   }
+  },
+  {
+   "key": "saint_bernard",
+   "slug": "saint-bernard",
+   "ko": "세인트버나드",
+   "species": "dog",
+   "intro": "알프스 산악 구조견으로 알려진 초대형견이에요. 몸집에 걸맞게 매우 차분하고 인내심이 많은 편이에요.",
+   "known": "매우 차분한 대형견",
+   "knownScore": -0.9,
+   "n": 200,
+   "mean": 26.7,
+   "median": 19.0,
+   "aegenShare": 11.5,
+   "dist": {
+    "pure-aegen": 8,
+    "aegen": 15,
+    "balanced": 4,
+    "teto": 57,
+    "pure-teto": 116
+   },
+   "rep": {
+    "file": "saint_bernard_148.jpg",
+    "score": 18.9,
+    "image": "/images/breeds/saint-bernard.webp"
+   }
+  },
+  {
+   "key": "samoyed",
+   "slug": "samoyed",
+   "ko": "사모예드",
+   "species": "dog",
+   "intro": "입꼬리가 올라간 '사모예드 미소'와 새하얀 털이 특징인 썰매견이에요. 사교적이고 활발해서 사람과 어울리는 걸 좋아해요.",
+   "known": "활발·사교적 썰매견",
+   "knownScore": 0.6,
+   "n": 200,
+   "mean": 74.0,
+   "median": 80.5,
+   "aegenShare": 90.5,
+   "dist": {
+    "pure-aegen": 105,
+    "aegen": 72,
+    "balanced": 5,
+    "teto": 11,
+    "pure-teto": 7
+   },
+   "rep": {
+    "file": "samoyed_183.jpg",
+    "score": 80.4,
+    "image": "/images/breeds/samoyed.webp"
+   }
+  },
+  {
+   "key": "scottish_terrier",
+   "slug": "scottish-terrier",
+   "ko": "스코티시 테리어",
+   "species": "dog",
+   "intro": "짧은 다리와 수염 같은 턱털이 특징인 테리어예요. 점잖은 인상 속에 테리어다운 고집과 독립심이 있어요.",
+   "known": "점잖지만 테리어 기질",
+   "knownScore": 0.2,
+   "n": 199,
+   "mean": 55.7,
+   "median": 70.9,
+   "aegenShare": 63.3,
+   "dist": {
+    "pure-aegen": 32,
+    "aegen": 85,
+    "balanced": 13,
+    "teto": 33,
+    "pure-teto": 36
+   },
+   "rep": {
+    "file": "scottish_terrier_179.jpg",
+    "score": 70.9,
+    "image": "/images/breeds/scottish-terrier.webp"
+   }
+  },
+  {
+   "key": "shiba_inu",
+   "slug": "shiba-inu",
+   "ko": "시바견",
+   "species": "dog",
+   "intro": "여우를 닮은 얼굴과 말린 꼬리가 특징인 일본 견종이에요. 독립적이고 기세 있는 성격, 야성적인 분위기로 알려져 있어요.",
+   "known": "독립적·기세 있음·여우 같은 야성",
+   "knownScore": 0.5,
+   "n": 200,
+   "mean": 64.4,
+   "median": 74.6,
+   "aegenShare": 78.5,
+   "dist": {
+    "pure-aegen": 38,
+    "aegen": 112,
+    "balanced": 12,
+    "teto": 21,
+    "pure-teto": 17
+   },
+   "rep": {
+    "file": "shiba_inu_19.jpg",
+    "score": 74.6,
+    "image": "/images/breeds/shiba-inu.webp"
+   }
+  },
+  {
+   "key": "siamese",
+   "slug": "siamese",
+   "ko": "샴",
+   "species": "cat",
+   "intro": "얼굴·귀·발·꼬리 끝이 진한 포인트 무늬와 푸른 눈이 특징이에요. 말이 많고 사람과 적극적으로 어울리는 품종으로 알려져 있어요.",
+   "known": "말이 많고 활발",
+   "knownScore": 0.6,
+   "n": 199,
+   "mean": 77.3,
+   "median": 82.7,
+   "aegenShare": 92.5,
+   "dist": {
+    "pure-aegen": 151,
+    "aegen": 33,
+    "balanced": 1,
+    "teto": 5,
+    "pure-teto": 9
+   },
+   "rep": {
+    "file": "Siamese_71.jpg",
+    "score": 82.7,
+    "image": "/images/breeds/siamese.webp"
+   }
+  },
+  {
+   "key": "sphynx",
+   "slug": "sphynx",
+   "ko": "스핑크스",
+   "species": "cat",
+   "intro": "털이 거의 없는 독특한 외모의 고양이예요. 체온을 유지하려 사람 곁을 찾고, 관심받기를 좋아하며 에너지가 많은 편이에요.",
+   "known": "에너지 많고 관심 추구",
+   "knownScore": 0.4,
+   "n": 200,
+   "mean": 73.9,
+   "median": 81.8,
+   "aegenShare": 89.0,
+   "dist": {
+    "pure-aegen": 130,
+    "aegen": 45,
+    "balanced": 5,
+    "teto": 9,
+    "pure-teto": 11
+   },
+   "rep": {
+    "file": "Sphynx_189.jpg",
+    "score": 81.8,
+    "image": "/images/breeds/sphynx.webp"
+   }
+  },
+  {
+   "key": "staffordshire_bull_terrier",
+   "slug": "staffordshire-bull-terrier",
+   "ko": "스태퍼드셔 불 테리어",
+   "species": "dog",
+   "intro": "작지만 근육질인 몸과 넓은 머리가 특징이에요. 에너지가 많고 사람을 좋아하는 활기찬 품종이에요.",
+   "known": "고에너지·근육질",
+   "knownScore": 0.8,
+   "n": 189,
+   "mean": 20.1,
+   "median": 17.8,
+   "aegenShare": 1.6,
+   "dist": {
+    "pure-aegen": 1,
+    "aegen": 0,
+    "balanced": 4,
+    "teto": 53,
+    "pure-teto": 131
+   },
+   "rep": {
+    "file": "staffordshire_bull_terrier_109.jpg",
+    "score": 17.8,
+    "image": "/images/breeds/staffordshire-bull-terrier.webp"
+   }
+  },
+  {
+   "key": "wheaten_terrier",
+   "slug": "wheaten-terrier",
+   "ko": "소프트 코티드 휘튼 테리어",
+   "species": "dog",
+   "intro": "밀 이삭 색의 부드러운 곱슬 털이 특징인 아일랜드 테리어예요. 명랑하고 활동적이며 반갑게 뛰어오르는 인사로 유명해요.",
+   "known": "명랑·활동적",
+   "knownScore": 0.6,
+   "n": 200,
+   "mean": 48.8,
+   "median": 43.1,
+   "aegenShare": 48.5,
+   "dist": {
+    "pure-aegen": 46,
+    "aegen": 48,
+    "balanced": 9,
+    "teto": 41,
+    "pure-teto": 56
+   },
+   "rep": {
+    "file": "wheaten_terrier_167.jpg",
+    "score": 45.4,
+    "image": "/images/breeds/wheaten-terrier.webp"
+   }
+  },
+  {
+   "key": "yorkshire_terrier",
+   "slug": "yorkshire-terrier",
+   "ko": "요크셔 테리어",
+   "species": "dog",
+   "intro": "길고 윤기 나는 청회색·황갈색 털의 소형견이에요. 작지만 활발하고 대담한 테리어 기질을 가지고 있어요.",
+   "known": "작지만 활발·대담",
+   "knownScore": 0.3,
+   "n": 200,
+   "mean": 53.3,
+   "median": 62.7,
+   "aegenShare": 55.0,
+   "dist": {
+    "pure-aegen": 35,
+    "aegen": 68,
+    "balanced": 20,
+    "teto": 43,
+    "pure-teto": 34
+   },
+   "rep": {
+    "file": "yorkshire_terrier_2.jpg",
+    "score": 62.7,
+    "image": "/images/breeds/yorkshire-terrier.webp"
+   }
+  }
+ ]
+}
