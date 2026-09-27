@@ -39,7 +39,7 @@ function MetricsPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  const API_URL = import.meta.env.VITE_API_URL || 'https://agtt.cloud/api';
+  const API_URL = import.meta.env.VITE_API_URL || 'https://agttpet.com/api';
 
   const fetchMetrics = async () => {
     try {
