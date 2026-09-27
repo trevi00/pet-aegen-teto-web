@@ -74,6 +74,12 @@ const Footer: React.FC = () => {
           <p className="text-[11px] text-[#cccccc]">
             © 2024 에겐vs테토 테스트. All rights reserved.
           </p>
+          <p className="text-[10px] text-[#cccccc] mt-1">
+            AI 모델 학습 데이터:{' '}
+            <a href="https://www.robots.ox.ac.uk/~vgg/data/pets/" target="_blank" rel="noopener noreferrer" className="underline">Oxford-IIIT Pet Dataset</a>
+            {' '}(Parkhi et al., 2012) ·{' '}
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" className="underline">CC BY-SA 4.0</a>
+          </p>
         </div>
       </div>
     </footer>

@@ -1,7 +1,7 @@
 # ========================================
 # Stage 1: Build React App
 # ========================================
-FROM node:18-alpine AS builder
+FROM node:22-alpine AS builder
 
 WORKDIR /app
 
@@ -21,7 +21,7 @@ RUN npm run build
 # ========================================
 # Stage 2: Serve with Nginx
 # ========================================
-FROM nginx:alpine
+FROM nginxinc/nginx-unprivileged:alpine
 
 # Nginx 설정 복사
 COPY nginx.conf /etc/nginx/conf.d/default.conf
@@ -30,6 +30,6 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/dist /usr/share/nginx/html
 
 # 포트 노출
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["nginx", "-g", "daemon off;"]
