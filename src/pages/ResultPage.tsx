@@ -1,7 +1,8 @@
-import React, { useRef } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import React, { useRef, useState } from 'react';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import html2canvas from 'html2canvas';
 import { COLORS } from '../constants/colors';
+import { typeOf } from './TypeBreedPages';
 
 interface LocationState {
   classification: 'aegen' | 'teto';
@@ -16,8 +17,77 @@ const ResultPage: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const resultCardRef = useRef<HTMLDivElement>(null);
-  const { classification, aeGenPercentage, tetoPercentage, comment, petName, imageUri } =
-    location.state as LocationState;
+  const [linkMsg, setLinkMsg] = useState('');
+  // 새로고침·직접 접속처럼 분석 결과(state) 없이 열리면 빈 화면 대신 홈으로
+  const state = location.state as LocationState | null;
+  if (!state) return <Navigate to="/" replace />;
+  const { classification, aeGenPercentage, tetoPercentage, comment, petName, imageUri } = state;
+  const petType = typeOf(aeGenPercentage);
+
+  // 결과 링크: 유형 페이지 + 이름·비율 (사진은 링크에 담지 않는다)
+  const handleShareLink = async () => {
+    const url = `${window.location.origin}/type/${petType.slug}?n=${encodeURIComponent(petName)}&p=${aeGenPercentage}`;
+    const text = `${petName}의 에겐테토 결과는 '${petType.name}' (에겐 ${aeGenPercentage}%) 🐾`;
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: '반려동물 에겐테토 결과', text, url });
+        return;
+      }
+      await navigator.clipboard.writeText(`${text} ${url}`);
+      setLinkMsg('링크를 복사했어요. 붙여넣어 공유해 주세요!');
+    } catch {
+      // 공유 창을 닫은 경우 — 아무것도 하지 않는다
+    }
+  };
+
+  // 인스타그램: 웹에서 링크를 넘겨받는 공유 주소가 없어, 스토리 크기(1080×1920) 이미지를 만들어 공유 창으로 넘긴다.
+  // 결과 링크는 클립보드에 복사해 두어 스토리의 링크 스티커에 붙여넣을 수 있게 한다.
+  const handleInstagram = async () => {
+    if (!resultCardRef.current) return;
+    const url = `${window.location.origin}/type/${petType.slug}?n=${encodeURIComponent(petName)}&p=${aeGenPercentage}`;
+    try {
+      const card = await html2canvas(resultCardRef.current, { backgroundColor: '#FFFFFF', scale: 3, logging: false, allowTaint: true, useCORS: false });
+      const story = document.createElement('canvas');
+      story.width = 1080;
+      story.height = 1920;
+      const ctx = story.getContext('2d');
+      if (!ctx) return;
+      const bg = ctx.createLinearGradient(0, 0, 1080, 1920);
+      bg.addColorStop(0, '#FDF2FA');
+      bg.addColorStop(1, '#F2F5FE');
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, 1080, 1920);
+      const w = 880;
+      const h = Math.min(1400, (card.height / card.width) * w);
+      ctx.drawImage(card, (1080 - w) / 2, (1920 - h) / 2 - 60, w, h);
+      ctx.fillStyle = '#888888';
+      ctx.font = 'bold 44px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('우리 아이도 테스트해 보기 🐾 agtt.cloud', 540, 1920 - 170);
+
+      const blob: Blob | null = await new Promise((resolve) => story.toBlob(resolve, 'image/png'));
+      if (!blob) return;
+      const file = new File([blob], `${petName}_에겐테토_스토리.png`, { type: 'image/png' });
+      try {
+        await navigator.clipboard.writeText(url);
+      } catch {
+        // 클립보드 권한이 없으면 링크 복사만 건너뛴다
+      }
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        await navigator.share({ files: [file], title: '반려동물 에겐테토 결과' });
+        setLinkMsg('공유 창에서 인스타그램을 골라 주세요. 결과 링크는 복사돼 있어 링크 스티커에 붙여넣을 수 있어요.');
+      } else {
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = file.name;
+        a.click();
+        URL.revokeObjectURL(a.href);
+        setLinkMsg('스토리용 이미지를 저장했어요. 휴대폰의 인스타그램 앱에서 스토리로 올려 주세요.');
+      }
+    } catch {
+      // 공유 창을 닫은 경우 — 아무것도 하지 않는다
+    }
+  };
 
   const isAeGen = classification === 'aegen';
 
@@ -189,6 +259,17 @@ const ResultPage: React.FC = () => {
           </div>
         </div>
 
+        {/* Result Type */}
+        <Link
+          to={`/type/${petType.slug}`}
+          className="block bg-white rounded-[15px] p-4 mb-4 shadow-[0_2px_10px_rgba(0,0,0,0.08)] max-w-[340px] mx-auto"
+        >
+          <p className="text-[11px] text-[#999999] mb-1">결과 유형</p>
+          <p className="text-[14px] font-bold text-[#333333]">{petType.emoji} {petType.name}</p>
+          <p className="text-[12px] text-[#666666] mt-1">{petType.headline}</p>
+          <p className="text-[11px] text-[#FF9ED8] mt-2">유형 설명 보기 →</p>
+        </Link>
+
         {/* Buttons */}
         <div className="space-y-3">
           {/* Share Button */}
@@ -198,6 +279,21 @@ const ResultPage: React.FC = () => {
           >
             내 새꾸 결과 공유하기 🐾
           </button>
+          <button
+            onClick={handleShareLink}
+            className="w-full py-3 rounded-[10px] bg-white text-xs font-bold shadow-sm"
+            style={{ color: COLORS.text.secondary }}
+          >
+            결과 링크 공유하기 🔗
+          </button>
+          <button
+            onClick={handleInstagram}
+            className="w-full py-3 rounded-[10px] text-xs font-bold text-white"
+            style={{ backgroundImage: 'linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4)' }}
+          >
+            인스타그램 스토리로 공유하기 📸
+          </button>
+          {linkMsg && <p className="text-center text-[11px] text-[#888888]">{linkMsg}</p>}
 
           {/* Secondary Buttons */}
           <div className="flex gap-3">

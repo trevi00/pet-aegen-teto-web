@@ -49,6 +49,18 @@ const Footer: React.FC = () => {
           >
             가이드
           </Link>
+          <Link
+            to="/type"
+            className={`text-[13px] ${location.pathname.startsWith('/type') ? 'text-[#FFB5EB] font-medium' : 'text-[#666666]'} hover:text-[#FFB5EB] transition-colors`}
+          >
+            5가지 유형
+          </Link>
+          <Link
+            to="/breed"
+            className={`text-[13px] ${location.pathname.startsWith('/breed') ? 'text-[#FFB5EB] font-medium' : 'text-[#666666]'} hover:text-[#FFB5EB] transition-colors`}
+          >
+            품종별 통계
+          </Link>
         </div>
 
         {/* Legal Links */}
