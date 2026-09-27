@@ -14,6 +14,7 @@ export interface AnalysisResponse {
   aegen_percentage?: number;
   teto_percentage?: number;
   comment?: string;
+  breed_match?: { key: string; ko: string; prob: number } | null;
   error?: string;
 }
 

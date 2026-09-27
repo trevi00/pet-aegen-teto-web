@@ -11,6 +11,7 @@ interface LocationState {
   comment: string;
   petName: string;
   imageUri: string;
+  breedMatch?: { key: string; ko: string; prob: number } | null;
 }
 
 const ResultPage: React.FC = () => {
@@ -21,7 +22,7 @@ const ResultPage: React.FC = () => {
   // 새로고침·직접 접속처럼 분석 결과(state) 없이 열리면 빈 화면 대신 홈으로
   const state = location.state as LocationState | null;
   if (!state) return <Navigate to="/" replace />;
-  const { classification, aeGenPercentage, tetoPercentage, comment, petName, imageUri } = state;
+  const { classification, aeGenPercentage, tetoPercentage, comment, petName, imageUri, breedMatch } = state;
   const petType = typeOf(aeGenPercentage);
 
   // 결과 링크: 유형 페이지 + 이름·비율 (사진은 링크에 담지 않는다)
@@ -255,7 +256,12 @@ const ResultPage: React.FC = () => {
 
           {/* Comment */}
           <div className="bg-[#FFF4FC] p-5 rounded-2xl mb-8">
-            <p className="text-[10px] text-center leading-6">{comment}</p>
+            <p className="text-[13px] text-center leading-6 text-[#444444]">{comment}</p>
+            {breedMatch && (
+              <p className="text-[11px] text-center text-[#888888] mt-2">
+                닮은 품종: <Link to={`/breed/${breedMatch.key.replace(/_/g, '-')}`} className="underline">{breedMatch.ko}</Link> ({breedMatch.prob}%)
+              </p>
+            )}
           </div>
         </div>
 

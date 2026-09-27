@@ -31,7 +31,7 @@ const ROUTES = [
     description: '에겐테토 테스트가 무엇인지, 에겐과 테토 타입이 어떻게 다른지, AI가 사진을 어떻게 분석하는지 소개해요.',
     body: `<h1>서비스 소개</h1>
 <p>에겐테토 테스트는 강아지와 고양이의 사진을 AI가 분석해 에겐과 테토 중 어느 쪽에 가까운지 알려주는 무료 서비스예요.</p>
-<p>공개 반려동물 사진 데이터(Oxford-IIIT Pet Dataset, CC BY-SA 4.0)로 학습한 이미지 모델과 여러 모델의 결과를 합치는 방식으로 판단해요.</p>`,
+<p>공개 반려동물 사진 데이터(Oxford-IIIT Pet Dataset, CC BY-SA 4.0)로 학습한 이미지 모델이 품종 성향(60%)·사진 속 자세(30%)·나이 인상(10%) 기준으로 판단해요.</p>`,
   },
   {
     path: '/how-to-use',
@@ -85,7 +85,7 @@ const ROUTES = [
   },
   ...TYPES.map((t) => ({
     path: `/type/${t.slug}`,
-    title: `${t.name} 유형 (${t.range}) | ${NAME}`,
+    title: `${t.name} 유형 · ${t.range} | ${NAME}`,
     description: `${t.headline}. ${t.description.slice(0, 80)}…`,
     body: `<article><h1>${t.name}</h1><p>${t.range}</p><p><strong>${t.headline}</strong></p><p>${t.description}</p>`
       + `<h2>사진에서 보이는 신호</h2><ul>${t.signals.map((s) => `<li>${s}</li>`).join('')}</ul>`
