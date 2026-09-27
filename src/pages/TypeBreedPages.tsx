@@ -226,7 +226,7 @@ export const BreedListPage: React.FC = () => {
         <ul className="list-disc pl-5 space-y-1.5 text-[13px] text-[#555555] leading-relaxed">
           <li>고양이 {SUMMARY.cats.toLocaleString()}장의 평균 에겐 비율은 {SUMMARY.meanCat}%, 강아지 {SUMMARY.dogs.toLocaleString()}장은 {SUMMARY.meanDog}%였어요.</li>
           <li>품종에 일반적으로 알려진 에너지 수준과 AI의 평균 에겐 비율 사이의 상관계수는 {r}예요 (−1에 가까울수록 "활발하다고 알려진 품종일수록 테토로 판정").</li>
-          <li>품종보다 사진 속 순간이 결과에 더 크게 작용해서, 모든 품종에서 에겐과 테토가 함께 나왔어요.</li>
+          <li>AI는 품종의 알려진 에너지 수준을 가장 크게 보고(60%), 같은 품종 안에서는 사진 속 자세(30%)와 나이 인상(10%)에 따라 결과가 달라져요.</li>
         </ul>
         <p className="text-[11px] text-[#999999] mt-3">
           데이터: Oxford-IIIT Pet Dataset (Parkhi et al., 2012, CC BY-SA 4.0). 이 AI는 같은 데이터셋으로 학습했기 때문에, 이 통계는 "AI가 이 사진들을 어떻게 보는가"를 보여 줄 뿐 품종의 실제 성격을 잰 것이 아니에요.

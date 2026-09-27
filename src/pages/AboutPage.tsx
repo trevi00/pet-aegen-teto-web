@@ -68,7 +68,7 @@ const AboutPage: React.FC = () => {
               <div>
                 <h4 className="text-[14px] font-bold text-[#333333] mb-1">딥러닝 이미지 분석</h4>
                 <p className="text-[12px] text-[#666666] leading-relaxed">
-                  공개 반려동물 사진 데이터(37품종 약 7,300장)로 학습한 이미지 분류 모델이 사진 속 표정과 자세를 봅니다.
+                  공개 반려동물 사진 데이터(37품종 약 7,300장)로 학습한 이미지 모델이 닮은 품종과 사진 속 자세를 함께 봅니다.
                 </p>
               </div>
             </div>
@@ -76,9 +76,9 @@ const AboutPage: React.FC = () => {
             <div className="flex items-start gap-3">
               <span className="text-[20px]">📊</span>
               <div>
-                <h4 className="text-[14px] font-bold text-[#333333] mb-1">앙상블 분류 모델</h4>
+                <h4 className="text-[14px] font-bold text-[#333333] mb-1">품종·자세·나이 기준</h4>
                 <p className="text-[12px] text-[#666666] leading-relaxed">
-                  분류 모델과 사진 설명 모델의 결과를 합치고, 숫자가 과하게 한쪽으로 쏠리지 않도록 확률을 보정합니다. 학습에 쓰지 않은 사진 60장에서 사람의 판단과 약 78% 일치했어요.
+                  품종의 알려진 에너지 수준(60%), 사진 속 자세(30%), 나이 인상(10%)으로 만든 기준을 따르도록 학습했어요. 학습에 쓰지 않은 사진 735장에서 기준과 약 92% 일치했어요.
                 </p>
               </div>
             </div>

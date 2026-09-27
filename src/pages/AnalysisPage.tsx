@@ -28,6 +28,7 @@ const AnalysisPage: React.FC = () => {
               aeGenPercentage: result.aegen_percentage,
               tetoPercentage: result.teto_percentage,
               comment: result.comment,
+              breedMatch: result.breed_match ?? null,
               petName,
               imageUri,
             },

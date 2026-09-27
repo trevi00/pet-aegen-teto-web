@@ -4,16 +4,16 @@
   "breeds": 37,
   "cats": 2371,
   "dogs": 4978,
-  "meanCat": 63.5,
-  "meanDog": 40.7,
+  "meanCat": 52.8,
+  "meanDog": 41.9,
   "overallDist": {
-   "pure-aegen": 1811,
-   "aegen": 1519,
-   "balanced": 312,
-   "teto": 1405,
-   "pure-teto": 2302
+   "pure-aegen": 1769,
+   "aegen": 837,
+   "balanced": 894,
+   "teto": 1585,
+   "pure-teto": 2264
   },
-  "knownVsAiPearson": -0.19
+  "knownVsAiPearson": -0.98
  },
  "breeds": [
   {
@@ -25,19 +25,19 @@
    "known": "매우 활동적·호기심 많음",
    "knownScore": 0.8,
    "n": 198,
-   "mean": 57.9,
-   "median": 73.7,
-   "aegenShare": 62.6,
+   "mean": 11.6,
+   "median": 9.9,
+   "aegenShare": 0.0,
    "dist": {
-    "pure-aegen": 65,
-    "aegen": 56,
-    "balanced": 10,
-    "teto": 34,
-    "pure-teto": 33
+    "pure-aegen": 0,
+    "aegen": 0,
+    "balanced": 0,
+    "teto": 20,
+    "pure-teto": 178
    },
    "rep": {
-    "file": "Abyssinian_217.jpg",
-    "score": 73.4,
+    "file": "Abyssinian_165.jpg",
+    "score": 10.0,
     "image": "/images/breeds/abyssinian.webp"
    }
   },
@@ -51,18 +51,18 @@
    "knownScore": 0.6,
    "n": 200,
    "mean": 27.2,
-   "median": 17.3,
-   "aegenShare": 14.5,
+   "median": 25.1,
+   "aegenShare": 6.0,
    "dist": {
-    "pure-aegen": 24,
-    "aegen": 4,
-    "balanced": 2,
-    "teto": 31,
-    "pure-teto": 139
+    "pure-aegen": 0,
+    "aegen": 0,
+    "balanced": 49,
+    "teto": 75,
+    "pure-teto": 76
    },
    "rep": {
-    "file": "american_bulldog_122.jpg",
-    "score": 17.3,
+    "file": "american_bulldog_46.jpg",
+    "score": 25.1,
     "image": "/images/breeds/american-bulldog.webp"
    }
   },
@@ -75,19 +75,19 @@
    "known": "고에너지·근육질",
    "knownScore": 0.8,
    "n": 200,
-   "mean": 21.5,
-   "median": 18.2,
-   "aegenShare": 3.5,
+   "mean": 15.6,
+   "median": 13.2,
+   "aegenShare": 0.0,
    "dist": {
-    "pure-aegen": 3,
-    "aegen": 4,
-    "balanced": 2,
-    "teto": 56,
-    "pure-teto": 135
+    "pure-aegen": 0,
+    "aegen": 0,
+    "balanced": 4,
+    "teto": 52,
+    "pure-teto": 144
    },
    "rep": {
-    "file": "american_pit_bull_terrier_159.jpg",
-    "score": 18.2,
+    "file": "american_pit_bull_terrier_133.jpg",
+    "score": 13.2,
     "image": "/images/breeds/american-pit-bull-terrier.webp"
    }
   },
@@ -100,19 +100,19 @@
    "known": "느긋·저에너지",
    "knownScore": -0.9,
    "n": 200,
-   "mean": 21.6,
-   "median": 17.9,
-   "aegenShare": 4.0,
+   "mean": 87.9,
+   "median": 91.0,
+   "aegenShare": 100.0,
    "dist": {
-    "pure-aegen": 1,
-    "aegen": 7,
-    "balanced": 1,
-    "teto": 47,
-    "pure-teto": 144
+    "pure-aegen": 164,
+    "aegen": 34,
+    "balanced": 2,
+    "teto": 0,
+    "pure-teto": 0
    },
    "rep": {
-    "file": "basset_hound_153.jpg",
-    "score": 17.9,
+    "file": "basset_hound_19.jpg",
+    "score": 91.0,
     "image": "/images/breeds/basset-hound.webp"
    }
   },
@@ -125,19 +125,19 @@
    "known": "활발·후각 탐색",
    "knownScore": 0.7,
    "n": 200,
-   "mean": 26.1,
-   "median": 18.7,
-   "aegenShare": 11.0,
+   "mean": 21.2,
+   "median": 18.3,
+   "aegenShare": 4.0,
    "dist": {
-    "pure-aegen": 9,
-    "aegen": 13,
-    "balanced": 4,
-    "teto": 56,
-    "pure-teto": 118
+    "pure-aegen": 0,
+    "aegen": 5,
+    "balanced": 15,
+    "teto": 73,
+    "pure-teto": 107
    },
    "rep": {
-    "file": "beagle_1.jpg",
-    "score": 18.7,
+    "file": "beagle_122.jpg",
+    "score": 18.0,
     "image": "/images/breeds/beagle.webp"
    }
   },
@@ -150,19 +150,19 @@
    "known": "고에너지·야생 고양이 같은 외모",
    "knownScore": 1.0,
    "n": 200,
-   "mean": 48.4,
-   "median": 39.2,
-   "aegenShare": 47.5,
+   "mean": 6.3,
+   "median": 4.8,
+   "aegenShare": 0.0,
    "dist": {
-    "pure-aegen": 37,
-    "aegen": 52,
-    "balanced": 10,
-    "teto": 64,
-    "pure-teto": 37
+    "pure-aegen": 0,
+    "aegen": 0,
+    "balanced": 0,
+    "teto": 5,
+    "pure-teto": 195
    },
    "rep": {
-    "file": "Bengal_183.jpg",
-    "score": 39.4,
+    "file": "Bengal_166.jpg",
+    "score": 4.8,
     "image": "/images/breeds/bengal.webp"
    }
   },
@@ -175,19 +175,19 @@
    "known": "온순·조용함",
    "knownScore": -0.6,
    "n": 200,
-   "mean": 81.0,
-   "median": 83.6,
-   "aegenShare": 97.5,
+   "mean": 85.2,
+   "median": 88.0,
+   "aegenShare": 100.0,
    "dist": {
-    "pure-aegen": 173,
-    "aegen": 22,
-    "balanced": 0,
-    "teto": 1,
-    "pure-teto": 4
+    "pure-aegen": 158,
+    "aegen": 35,
+    "balanced": 7,
+    "teto": 0,
+    "pure-teto": 0
    },
    "rep": {
-    "file": "Birman_111.jpg",
-    "score": 83.6,
+    "file": "Birman_155.jpg",
+    "score": 87.9,
     "image": "/images/breeds/birman.webp"
    }
   },
@@ -200,19 +200,19 @@
    "known": "애교 많고 적당히 활발",
    "knownScore": 0.0,
    "n": 184,
-   "mean": 54.0,
-   "median": 61.5,
-   "aegenShare": 57.6,
+   "mean": 51.2,
+   "median": 50.3,
+   "aegenShare": 52.2,
    "dist": {
-    "pure-aegen": 45,
-    "aegen": 50,
-    "balanced": 21,
-    "teto": 36,
-    "pure-teto": 32
+    "pure-aegen": 3,
+    "aegen": 49,
+    "balanced": 88,
+    "teto": 43,
+    "pure-teto": 1
    },
    "rep": {
-    "file": "Bombay_162.jpg",
-    "score": 61.7,
+    "file": "Bombay_94.jpg",
+    "score": 50.3,
     "image": "/images/breeds/bombay.webp"
    }
   },
@@ -225,19 +225,19 @@
    "known": "매우 활발·장난기",
    "knownScore": 0.9,
    "n": 199,
-   "mean": 23.0,
-   "median": 18.0,
-   "aegenShare": 7.5,
+   "mean": 18.1,
+   "median": 17.5,
+   "aegenShare": 0.5,
    "dist": {
-    "pure-aegen": 4,
-    "aegen": 10,
-    "balanced": 4,
-    "teto": 44,
-    "pure-teto": 137
+    "pure-aegen": 0,
+    "aegen": 0,
+    "balanced": 5,
+    "teto": 77,
+    "pure-teto": 117
    },
    "rep": {
-    "file": "boxer_146.jpg",
-    "score": 18.0,
+    "file": "boxer_181.jpg",
+    "score": 17.5,
     "image": "/images/breeds/boxer.webp"
    }
   },
@@ -250,19 +250,19 @@
    "known": "느긋·점잖음",
    "knownScore": -0.8,
    "n": 200,
-   "mean": 40.8,
-   "median": 26.9,
-   "aegenShare": 36.0,
+   "mean": 87.9,
+   "median": 89.6,
+   "aegenShare": 100.0,
    "dist": {
-    "pure-aegen": 18,
-    "aegen": 47,
-    "balanced": 11,
-    "teto": 64,
-    "pure-teto": 60
+    "pure-aegen": 169,
+    "aegen": 31,
+    "balanced": 0,
+    "teto": 0,
+    "pure-teto": 0
    },
    "rep": {
-    "file": "British_Shorthair_43.jpg",
-    "score": 26.9,
+    "file": "British_Shorthair_103.jpg",
+    "score": 89.6,
     "image": "/images/breeds/british-shorthair.webp"
    }
   },
@@ -275,19 +275,19 @@
    "known": "작지만 기세가 강함",
    "knownScore": 0.3,
    "n": 200,
-   "mean": 41.0,
-   "median": 29.2,
-   "aegenShare": 32.5,
+   "mean": 27.0,
+   "median": 22.6,
+   "aegenShare": 8.0,
    "dist": {
-    "pure-aegen": 19,
-    "aegen": 39,
-    "balanced": 15,
-    "teto": 79,
-    "pure-teto": 48
+    "pure-aegen": 0,
+    "aegen": 2,
+    "balanced": 40,
+    "teto": 74,
+    "pure-teto": 84
    },
    "rep": {
-    "file": "chihuahua_185.jpg",
-    "score": 29.2,
+    "file": "chihuahua_59.jpg",
+    "score": 22.5,
     "image": "/images/breeds/chihuahua.webp"
    }
   },
@@ -300,19 +300,19 @@
    "known": "빠르고 활동적",
    "knownScore": 0.7,
    "n": 190,
-   "mean": 59.6,
-   "median": 71.5,
-   "aegenShare": 68.9,
+   "mean": 10.1,
+   "median": 8.4,
+   "aegenShare": 0.0,
    "dist": {
-    "pure-aegen": 55,
-    "aegen": 61,
-    "balanced": 21,
-    "teto": 33,
-    "pure-teto": 20
+    "pure-aegen": 0,
+    "aegen": 0,
+    "balanced": 1,
+    "teto": 12,
+    "pure-teto": 177
    },
    "rep": {
-    "file": "Egyptian_Mau_224.jpg",
-    "score": 71.7,
+    "file": "Egyptian_Mau_19.jpg",
+    "score": 8.4,
     "image": "/images/breeds/egyptian-mau.webp"
    }
   },
@@ -325,19 +325,19 @@
    "known": "명랑·활동적",
    "knownScore": 0.4,
    "n": 196,
-   "mean": 28.6,
-   "median": 18.2,
-   "aegenShare": 16.3,
+   "mean": 35.8,
+   "median": 36.2,
+   "aegenShare": 19.4,
    "dist": {
-    "pure-aegen": 11,
-    "aegen": 19,
-    "balanced": 4,
-    "teto": 44,
-    "pure-teto": 118
+    "pure-aegen": 0,
+    "aegen": 5,
+    "balanced": 72,
+    "teto": 84,
+    "pure-teto": 35
    },
    "rep": {
-    "file": "english_cocker_spaniel_10.jpg",
-    "score": 18.2,
+    "file": "english_cocker_spaniel_69.jpg",
+    "score": 36.2,
     "image": "/images/breeds/english-cocker-spaniel.webp"
    }
   },
@@ -350,19 +350,19 @@
    "known": "온화하지만 운동량 많음",
    "knownScore": 0.3,
    "n": 200,
-   "mean": 17.7,
-   "median": 15.7,
-   "aegenShare": 1.5,
+   "mean": 40.7,
+   "median": 39.1,
+   "aegenShare": 34.0,
    "dist": {
-    "pure-aegen": 1,
-    "aegen": 2,
-    "balanced": 1,
-    "teto": 15,
-    "pure-teto": 181
+    "pure-aegen": 0,
+    "aegen": 34,
+    "balanced": 63,
+    "teto": 82,
+    "pure-teto": 21
    },
    "rep": {
-    "file": "english_setter_128.jpg",
-    "score": 15.7,
+    "file": "english_setter_22.jpg",
+    "score": 39.1,
     "image": "/images/breeds/english-setter.webp"
    }
   },
@@ -375,19 +375,19 @@
    "known": "최상위 에너지 사냥견",
    "knownScore": 1.0,
    "n": 200,
-   "mean": 19.5,
-   "median": 17.6,
-   "aegenShare": 1.0,
+   "mean": 12.4,
+   "median": 10.1,
+   "aegenShare": 0.0,
    "dist": {
     "pure-aegen": 0,
-    "aegen": 2,
-    "balanced": 3,
-    "teto": 51,
-    "pure-teto": 144
+    "aegen": 0,
+    "balanced": 1,
+    "teto": 35,
+    "pure-teto": 164
    },
    "rep": {
-    "file": "german_shorthaired_110.jpg",
-    "score": 17.6,
+    "file": "german_shorthaired_106.jpg",
+    "score": 10.2,
     "image": "/images/breeds/german-shorthaired.webp"
    }
   },
@@ -400,19 +400,19 @@
    "known": "차분·듬직한 경비견",
    "knownScore": -0.7,
    "n": 200,
-   "mean": 45.4,
-   "median": 31.9,
-   "aegenShare": 41.0,
+   "mean": 84.7,
+   "median": 87.5,
+   "aegenShare": 100.0,
    "dist": {
-    "pure-aegen": 33,
-    "aegen": 44,
-    "balanced": 13,
-    "teto": 57,
-    "pure-teto": 53
+    "pure-aegen": 150,
+    "aegen": 45,
+    "balanced": 5,
+    "teto": 0,
+    "pure-teto": 0
    },
    "rep": {
-    "file": "great_pyrenees_38.jpg",
-    "score": 32.0,
+    "file": "great_pyrenees_144.jpg",
+    "score": 87.4,
     "image": "/images/breeds/great-pyrenees.webp"
    }
   },
@@ -425,19 +425,19 @@
    "known": "온순·사교적",
    "knownScore": -0.1,
    "n": 200,
-   "mean": 64.6,
-   "median": 77.2,
-   "aegenShare": 75.5,
+   "mean": 45.2,
+   "median": 41.8,
+   "aegenShare": 37.5,
    "dist": {
-    "pure-aegen": 73,
-    "aegen": 73,
-    "balanced": 10,
-    "teto": 22,
-    "pure-teto": 22
+    "pure-aegen": 2,
+    "aegen": 38,
+    "balanced": 72,
+    "teto": 80,
+    "pure-teto": 8
    },
    "rep": {
-    "file": "havanese_52.jpg",
-    "score": 77.2,
+    "file": "havanese_129.jpg",
+    "score": 41.7,
     "image": "/images/breeds/havanese.webp"
    }
   },
@@ -450,19 +450,19 @@
    "known": "고양이 같은 점잖음·우아함",
    "knownScore": -0.8,
    "n": 200,
-   "mean": 30.5,
-   "median": 18.9,
-   "aegenShare": 18.5,
+   "mean": 83.4,
+   "median": 84.8,
+   "aegenShare": 100.0,
    "dist": {
-    "pure-aegen": 14,
-    "aegen": 21,
-    "balanced": 7,
-    "teto": 47,
-    "pure-teto": 111
+    "pure-aegen": 144,
+    "aegen": 52,
+    "balanced": 4,
+    "teto": 0,
+    "pure-teto": 0
    },
    "rep": {
-    "file": "japanese_chin_55.jpg",
-    "score": 18.9,
+    "file": "japanese_chin_20.jpg",
+    "score": 84.8,
     "image": "/images/breeds/japanese-chin.webp"
    }
   },
@@ -475,19 +475,19 @@
    "known": "명랑하지만 중간 에너지",
    "knownScore": 0.0,
    "n": 199,
-   "mean": 58.6,
-   "median": 73.7,
-   "aegenShare": 64.8,
+   "mean": 42.9,
+   "median": 37.5,
+   "aegenShare": 29.1,
    "dist": {
-    "pure-aegen": 71,
-    "aegen": 55,
-    "balanced": 7,
-    "teto": 39,
-    "pure-teto": 27
+    "pure-aegen": 4,
+    "aegen": 34,
+    "balanced": 53,
+    "teto": 104,
+    "pure-teto": 4
    },
    "rep": {
-    "file": "keeshond_115.jpg",
-    "score": 73.7,
+    "file": "keeshond_22.jpg",
+    "score": 37.5,
     "image": "/images/breeds/keeshond.webp"
    }
   },
@@ -500,19 +500,19 @@
    "known": "온화한 대형견",
    "knownScore": -0.4,
    "n": 200,
-   "mean": 37.7,
-   "median": 23.4,
-   "aegenShare": 29.0,
+   "mean": 68.9,
+   "median": 69.5,
+   "aegenShare": 88.5,
    "dist": {
-    "pure-aegen": 34,
-    "aegen": 22,
-    "balanced": 5,
-    "teto": 59,
-    "pure-teto": 80
+    "pure-aegen": 54,
+    "aegen": 92,
+    "balanced": 47,
+    "teto": 7,
+    "pure-teto": 0
    },
    "rep": {
-    "file": "leonberger_6.jpg",
-    "score": 23.5,
+    "file": "leonberger_139.jpg",
+    "score": 69.0,
     "image": "/images/breeds/leonberger.webp"
    }
   },
@@ -525,19 +525,19 @@
    "known": "온화한 대형묘·놀기도 좋아함",
    "knownScore": -0.2,
    "n": 200,
-   "mean": 61.8,
-   "median": 75.8,
-   "aegenShare": 71.0,
+   "mean": 64.8,
+   "median": 66.2,
+   "aegenShare": 83.5,
    "dist": {
-    "pure-aegen": 75,
-    "aegen": 56,
-    "balanced": 17,
-    "teto": 27,
-    "pure-teto": 25
+    "pure-aegen": 21,
+    "aegen": 112,
+    "balanced": 57,
+    "teto": 10,
+    "pure-teto": 0
    },
    "rep": {
-    "file": "Maine_Coon_140.jpg",
-    "score": 75.5,
+    "file": "Maine_Coon_41.jpg",
+    "score": 66.2,
     "image": "/images/breeds/maine-coon.webp"
    }
   },
@@ -550,19 +550,19 @@
    "known": "작은 체구의 고에너지",
    "knownScore": 0.8,
    "n": 200,
-   "mean": 31.2,
-   "median": 22.4,
-   "aegenShare": 15.5,
+   "mean": 10.2,
+   "median": 8.9,
+   "aegenShare": 0.0,
    "dist": {
-    "pure-aegen": 9,
-    "aegen": 20,
-    "balanced": 10,
-    "teto": 83,
-    "pure-teto": 78
+    "pure-aegen": 0,
+    "aegen": 0,
+    "balanced": 0,
+    "teto": 13,
+    "pure-teto": 187
    },
    "rep": {
-    "file": "miniature_pinscher_143.jpg",
-    "score": 22.4,
+    "file": "miniature_pinscher_138.jpg",
+    "score": 8.8,
     "image": "/images/breeds/miniature-pinscher.webp"
    }
   },
@@ -575,19 +575,19 @@
    "known": "매우 온화·느긋",
    "knownScore": -0.9,
    "n": 196,
-   "mean": 40.1,
-   "median": 23.8,
-   "aegenShare": 33.2,
+   "mean": 87.6,
+   "median": 89.9,
+   "aegenShare": 99.5,
    "dist": {
-    "pure-aegen": 38,
-    "aegen": 23,
-    "balanced": 12,
-    "teto": 44,
-    "pure-teto": 79
+    "pure-aegen": 164,
+    "aegen": 31,
+    "balanced": 0,
+    "teto": 1,
+    "pure-teto": 0
    },
    "rep": {
-    "file": "newfoundland_105.jpg",
-    "score": 23.7,
+    "file": "newfoundland_46.jpg",
+    "score": 89.9,
     "image": "/images/breeds/newfoundland.webp"
    }
   },
@@ -600,19 +600,19 @@
    "known": "매우 차분·우아함",
    "knownScore": -1.0,
    "n": 200,
-   "mean": 62.6,
-   "median": 74.5,
-   "aegenShare": 73.0,
+   "mean": 91.9,
+   "median": 93.2,
+   "aegenShare": 100.0,
    "dist": {
-    "pure-aegen": 66,
-    "aegen": 68,
-    "balanced": 18,
-    "teto": 35,
-    "pure-teto": 13
+    "pure-aegen": 197,
+    "aegen": 3,
+    "balanced": 0,
+    "teto": 0,
+    "pure-teto": 0
    },
    "rep": {
-    "file": "Persian_137.jpg",
-    "score": 74.5,
+    "file": "Persian_145.jpg",
+    "score": 93.2,
     "image": "/images/breeds/persian.webp"
    }
   },
@@ -625,19 +625,19 @@
    "known": "활발·경계심",
    "knownScore": 0.4,
    "n": 200,
-   "mean": 69.6,
-   "median": 78.8,
-   "aegenShare": 84.5,
+   "mean": 21.1,
+   "median": 17.4,
+   "aegenShare": 4.0,
    "dist": {
-    "pure-aegen": 86,
-    "aegen": 76,
-    "balanced": 7,
-    "teto": 18,
-    "pure-teto": 13
+    "pure-aegen": 0,
+    "aegen": 1,
+    "balanced": 19,
+    "teto": 62,
+    "pure-teto": 118
    },
    "rep": {
-    "file": "pomeranian_155.jpg",
-    "score": 78.8,
+    "file": "pomeranian_9.jpg",
+    "score": 17.4,
     "image": "/images/breeds/pomeranian.webp"
    }
   },
@@ -650,19 +650,19 @@
    "known": "느긋·애교",
    "knownScore": -0.5,
    "n": 200,
-   "mean": 68.9,
-   "median": 78.7,
-   "aegenShare": 81.5,
+   "mean": 72.5,
+   "median": 73.4,
+   "aegenShare": 94.5,
    "dist": {
-    "pure-aegen": 83,
-    "aegen": 75,
-    "balanced": 13,
-    "teto": 15,
-    "pure-teto": 14
+    "pure-aegen": 72,
+    "aegen": 85,
+    "balanced": 41,
+    "teto": 1,
+    "pure-teto": 1
    },
    "rep": {
-    "file": "pug_15.jpg",
-    "score": 78.7,
+    "file": "pug_185.jpg",
+    "score": 73.3,
     "image": "/images/breeds/pug.webp"
    }
   },
@@ -675,19 +675,19 @@
    "known": "매우 온순·안기면 늘어짐",
    "knownScore": -1.0,
    "n": 200,
-   "mean": 80.8,
-   "median": 82.6,
+   "mean": 92.8,
+   "median": 94.7,
    "aegenShare": 99.5,
    "dist": {
-    "pure-aegen": 149,
-    "aegen": 48,
-    "balanced": 2,
-    "teto": 1,
+    "pure-aegen": 193,
+    "aegen": 6,
+    "balanced": 1,
+    "teto": 0,
     "pure-teto": 0
    },
    "rep": {
-    "file": "Ragdoll_114.jpg",
-    "score": 82.6,
+    "file": "Ragdoll_12.jpg",
+    "score": 94.7,
     "image": "/images/breeds/ragdoll.webp"
    }
   },
@@ -700,19 +700,19 @@
    "known": "조심스럽고 조용함",
    "knownScore": -0.5,
    "n": 200,
-   "mean": 62.8,
-   "median": 74.2,
-   "aegenShare": 73.0,
+   "mean": 77.9,
+   "median": 80.6,
+   "aegenShare": 97.0,
    "dist": {
-    "pure-aegen": 69,
-    "aegen": 72,
-    "balanced": 9,
-    "teto": 30,
-    "pure-teto": 20
+    "pure-aegen": 109,
+    "aegen": 71,
+    "balanced": 19,
+    "teto": 1,
+    "pure-teto": 0
    },
    "rep": {
-    "file": "Russian_Blue_118.jpg",
-    "score": 74.0,
+    "file": "Russian_Blue_123.jpg",
+    "score": 80.6,
     "image": "/images/breeds/russian-blue.webp"
    }
   },
@@ -725,19 +725,19 @@
    "known": "매우 차분한 대형견",
    "knownScore": -0.9,
    "n": 200,
-   "mean": 26.7,
-   "median": 19.0,
-   "aegenShare": 11.5,
+   "mean": 87.7,
+   "median": 90.9,
+   "aegenShare": 99.5,
    "dist": {
-    "pure-aegen": 8,
-    "aegen": 15,
+    "pure-aegen": 164,
+    "aegen": 31,
     "balanced": 4,
-    "teto": 57,
-    "pure-teto": 116
+    "teto": 1,
+    "pure-teto": 0
    },
    "rep": {
-    "file": "saint_bernard_148.jpg",
-    "score": 18.9,
+    "file": "saint_bernard_158.jpg",
+    "score": 90.9,
     "image": "/images/breeds/saint-bernard.webp"
    }
   },
@@ -750,19 +750,19 @@
    "known": "활발·사교적 썰매견",
    "knownScore": 0.6,
    "n": 200,
-   "mean": 74.0,
-   "median": 80.5,
-   "aegenShare": 90.5,
+   "mean": 17.0,
+   "median": 14.4,
+   "aegenShare": 2.0,
    "dist": {
-    "pure-aegen": 105,
-    "aegen": 72,
-    "balanced": 5,
-    "teto": 11,
-    "pure-teto": 7
+    "pure-aegen": 0,
+    "aegen": 1,
+    "balanced": 12,
+    "teto": 50,
+    "pure-teto": 137
    },
    "rep": {
-    "file": "samoyed_183.jpg",
-    "score": 80.4,
+    "file": "samoyed_47.jpg",
+    "score": 14.4,
     "image": "/images/breeds/samoyed.webp"
    }
   },
@@ -775,19 +775,19 @@
    "known": "점잖지만 테리어 기질",
    "knownScore": 0.2,
    "n": 199,
-   "mean": 55.7,
-   "median": 70.9,
-   "aegenShare": 63.3,
+   "mean": 41.0,
+   "median": 41.3,
+   "aegenShare": 35.2,
    "dist": {
-    "pure-aegen": 32,
-    "aegen": 85,
-    "balanced": 13,
-    "teto": 33,
-    "pure-teto": 36
+    "pure-aegen": 0,
+    "aegen": 31,
+    "balanced": 71,
+    "teto": 74,
+    "pure-teto": 23
    },
    "rep": {
-    "file": "scottish_terrier_179.jpg",
-    "score": 70.9,
+    "file": "scottish_terrier_126.jpg",
+    "score": 41.3,
     "image": "/images/breeds/scottish-terrier.webp"
    }
   },
@@ -800,19 +800,19 @@
    "known": "독립적·기세 있음·여우 같은 야성",
    "knownScore": 0.5,
    "n": 200,
-   "mean": 64.4,
-   "median": 74.6,
-   "aegenShare": 78.5,
+   "mean": 29.0,
+   "median": 28.1,
+   "aegenShare": 7.0,
    "dist": {
-    "pure-aegen": 38,
-    "aegen": 112,
-    "balanced": 12,
-    "teto": 21,
-    "pure-teto": 17
+    "pure-aegen": 0,
+    "aegen": 3,
+    "balanced": 51,
+    "teto": 76,
+    "pure-teto": 70
    },
    "rep": {
-    "file": "shiba_inu_19.jpg",
-    "score": 74.6,
+    "file": "shiba_inu_105.jpg",
+    "score": 28.2,
     "image": "/images/breeds/shiba-inu.webp"
    }
   },
@@ -825,19 +825,19 @@
    "known": "말이 많고 활발",
    "knownScore": 0.6,
    "n": 199,
-   "mean": 77.3,
-   "median": 82.7,
-   "aegenShare": 92.5,
+   "mean": 25.5,
+   "median": 24.2,
+   "aegenShare": 3.0,
    "dist": {
-    "pure-aegen": 151,
-    "aegen": 33,
-    "balanced": 1,
-    "teto": 5,
-    "pure-teto": 9
+    "pure-aegen": 1,
+    "aegen": 1,
+    "balanced": 21,
+    "teto": 100,
+    "pure-teto": 76
    },
    "rep": {
-    "file": "Siamese_71.jpg",
-    "score": 82.7,
+    "file": "Siamese_80.jpg",
+    "score": 24.2,
     "image": "/images/breeds/siamese.webp"
    }
   },
@@ -850,19 +850,19 @@
    "known": "에너지 많고 관심 추구",
    "knownScore": 0.4,
    "n": 200,
-   "mean": 73.9,
-   "median": 81.8,
-   "aegenShare": 89.0,
+   "mean": 25.2,
+   "median": 22.6,
+   "aegenShare": 3.5,
    "dist": {
-    "pure-aegen": 130,
-    "aegen": 45,
-    "balanced": 5,
-    "teto": 9,
-    "pure-teto": 11
+    "pure-aegen": 0,
+    "aegen": 1,
+    "balanced": 22,
+    "teto": 97,
+    "pure-teto": 80
    },
    "rep": {
-    "file": "Sphynx_189.jpg",
-    "score": 81.8,
+    "file": "Sphynx_105.jpg",
+    "score": 22.5,
     "image": "/images/breeds/sphynx.webp"
    }
   },
@@ -875,19 +875,19 @@
    "known": "고에너지·근육질",
    "knownScore": 0.8,
    "n": 189,
-   "mean": 20.1,
-   "median": 17.8,
-   "aegenShare": 1.6,
+   "mean": 15.4,
+   "median": 14.2,
+   "aegenShare": 0.0,
    "dist": {
-    "pure-aegen": 1,
+    "pure-aegen": 0,
     "aegen": 0,
-    "balanced": 4,
-    "teto": 53,
-    "pure-teto": 131
+    "balanced": 1,
+    "teto": 59,
+    "pure-teto": 129
    },
    "rep": {
-    "file": "staffordshire_bull_terrier_109.jpg",
-    "score": 17.8,
+    "file": "staffordshire_bull_terrier_98.jpg",
+    "score": 14.2,
     "image": "/images/breeds/staffordshire-bull-terrier.webp"
    }
   },
@@ -900,19 +900,19 @@
    "known": "명랑·활동적",
    "knownScore": 0.6,
    "n": 200,
-   "mean": 48.8,
-   "median": 43.1,
-   "aegenShare": 48.5,
+   "mean": 24.8,
+   "median": 23.9,
+   "aegenShare": 2.0,
    "dist": {
-    "pure-aegen": 46,
-    "aegen": 48,
-    "balanced": 9,
-    "teto": 41,
-    "pure-teto": 56
+    "pure-aegen": 0,
+    "aegen": 1,
+    "balanced": 15,
+    "teto": 111,
+    "pure-teto": 73
    },
    "rep": {
-    "file": "wheaten_terrier_167.jpg",
-    "score": 45.4,
+    "file": "wheaten_terrier_126.jpg",
+    "score": 23.9,
     "image": "/images/breeds/wheaten-terrier.webp"
    }
   },
@@ -925,19 +925,19 @@
    "known": "작지만 활발·대담",
    "knownScore": 0.3,
    "n": 200,
-   "mean": 53.3,
-   "median": 62.7,
-   "aegenShare": 55.0,
+   "mean": 28.5,
+   "median": 26.9,
+   "aegenShare": 5.5,
    "dist": {
-    "pure-aegen": 35,
-    "aegen": 68,
-    "balanced": 20,
-    "teto": 43,
-    "pure-teto": 34
+    "pure-aegen": 0,
+    "aegen": 3,
+    "balanced": 32,
+    "teto": 106,
+    "pure-teto": 59
    },
    "rep": {
-    "file": "yorkshire_terrier_2.jpg",
-    "score": 62.7,
+    "file": "yorkshire_terrier_183.jpg",
+    "score": 26.9,
     "image": "/images/breeds/yorkshire-terrier.webp"
    }
   }
