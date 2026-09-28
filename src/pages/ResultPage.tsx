@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
-import html2canvas from 'html2canvas';
 import { COLORS } from '../constants/colors';
 import { typeOf } from './TypeBreedPages';
 
@@ -47,7 +46,7 @@ const ResultPage: React.FC = () => {
     if (!resultCardRef.current) return;
     const url = `${window.location.origin}/type/${petType.slug}?n=${encodeURIComponent(petName)}&p=${aeGenPercentage}`;
     try {
-      const card = await html2canvas(resultCardRef.current, { backgroundColor: '#FFFFFF', scale: 3, logging: false, allowTaint: true, useCORS: false });
+      const card = await (await import('html2canvas')).default(resultCardRef.current, { backgroundColor: '#FFFFFF', scale: 3, logging: false, allowTaint: true, useCORS: false });
       const story = document.createElement('canvas');
       story.width = 1080;
       story.height = 1920;
@@ -101,7 +100,7 @@ const ResultPage: React.FC = () => {
 
     try {
       // html2canvas로 결과 카드를 캡처
-      const canvas = await html2canvas(resultCardRef.current, {
+      const canvas = await (await import('html2canvas')).default(resultCardRef.current, {
         backgroundColor: '#FFFFFF',
         scale: 2,
         logging: false,
@@ -156,7 +155,7 @@ const ResultPage: React.FC = () => {
 
     try {
       // html2canvas로 결과 카드를 캡처
-      const canvas = await html2canvas(resultCardRef.current, {
+      const canvas = await (await import('html2canvas')).default(resultCardRef.current, {
         backgroundColor: '#FFFFFF',
         scale: 2,
         logging: false,

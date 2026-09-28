@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import typesData from '../content/types.json';
 import breedsData from '../content/breeds.json';
@@ -118,14 +118,19 @@ export const TypeListPage: React.FC = () => {
 export const TypePage: React.FC = () => {
   const { slug } = useParams();
   const [params] = useSearchParams();
+  // 공유 링크(?n=이름&p=비율) 배너는 브라우저에서만 그린다 — 미리 그린 HTML(쿼리 없음)과 첫 렌더를 같게 해 hydrate 가 어긋나지 않게.
+  // 이름은 20자까지, 비율은 이 유형 범위일 때만 보여 준다.
+  const [shared, setShared] = useState<{ name: string; pct: number | null }>({ name: '', pct: null });
+  useEffect(() => {
+    const p = Number(params.get('p'));
+    const ok = params.has('p') && Number.isFinite(p) && p >= 0 && p <= 100 && typeOf(p).slug === slug;
+    setShared({ name: (params.get('n') ?? '').slice(0, 20), pct: ok ? p : null });
+  }, [params, slug]);
   const index = TYPES.findIndex((t) => t.slug === slug);
   if (index < 0) return <NotFoundPage />;
   const t = TYPES[index];
-
-  // 공유 링크(?n=이름&p=비율)로 들어온 경우 — 이름은 20자까지, 비율은 이 유형 범위일 때만 보여 준다
-  const sharedName = (params.get('n') ?? '').slice(0, 20);
-  const p = Number(params.get('p'));
-  const sharedPct = Number.isFinite(p) && p >= 0 && p <= 100 && typeOf(p).slug === t.slug ? p : null;
+  const sharedName = shared.name;
+  const sharedPct = shared.pct;
 
   const top = [...BREEDS]
     .map((b) => ({ b, share: (100 * (b.dist[t.slug] ?? 0)) / b.n }))
