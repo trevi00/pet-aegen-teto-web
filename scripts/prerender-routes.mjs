@@ -3,6 +3,7 @@
 // React 는 createRoot 로 #root 를 통째로 다시 그리므로, 여기서 넣은 요약은 JS 가 뜨기 전·크롤러용으로만 보인다.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
+import { render } from '../dist-ssr/entry-server.js';
 
 const GUIDES = JSON.parse(readFileSync('src/content/guides.json', 'utf8'));
 const TYPES = JSON.parse(readFileSync('src/content/types.json', 'utf8'));
@@ -145,7 +146,13 @@ for (const r of ROUTES) {
   html = r.noindex
     ? html.replace(/<link rel="canonical" href="[^"]*"\s*\/?>/, '<meta name="robots" content="noindex" />')
     : html.replace(/<link rel="canonical" href="[^"]*"\s*\/?>/, `<link rel="canonical" href="${url}" />`);
-  if (r.body) html = html.replace('<div id="root"></div>', `<div id="root"><main>${r.body}${NAV}</main></div>`);
+  // 색인 대상 페이지와 404 는 실제 React 화면을 미리 그린다 → 첫 화면부터 완성된 모습, 브라우저는 hydrate 만.
+  // 앱 전용 화면(/analysis·/result·/admin/metrics)은 사진을 올린 뒤에만 의미가 있어 비워 두고 브라우저가 그린다.
+  // (r.body 요약은 SSG 이전 방식의 흔적 — 지금은 쓰지 않는다)
+  if (!r.noindex || r.file === '404.html') {
+    const markup = render(r.path === '/404' ? '/__not-found__' : r.path);
+    html = html.replace('<div id="root"></div>', `<div id="root">${markup}</div>`);
+  }
 
   const out = r.file ? join(DIST, r.file) : r.path === '/' ? join(DIST, 'index.html') : join(DIST, r.path.slice(1), 'index.html');
   mkdirSync(dirname(out), { recursive: true });

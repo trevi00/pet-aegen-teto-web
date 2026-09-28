@@ -4,7 +4,8 @@
 
 @font-face {
   font-family: 'Ownglyph';
-  src: url('/fonts/Ownglyph_2022_UWY_Si_Woo-Rg.ttf') format('truetype');
+  /* 사이트 문구에 쓰이는 글자만 담은 부분 글꼴 (scripts/subset-font.sh, 원본 TTF 1.46MB) */
+  src: url('/fonts/ownglyph-subset.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
